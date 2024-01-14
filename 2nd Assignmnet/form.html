@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+</head>
+<style>
+    .input {
+        width: 80%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    input {
+        width: 63%;
+        height: 45px;
+    }
+
+    label {
+        width: 20%;
+        text-align: left;
+        display: inline-block;
+    }
+
+    .field {
+        display: flex;
+    }
+
+    .checkbox {
+        width: 10%;
+    }
+
+    button {
+        margin-right: auto;
+        display: block;
+        padding: 17px 30px;
+        border-radius: 7px;
+        color: white;
+        background: #10eb54;
+        border: 0;
+    }
+
+    .radio {
+        width: 15%;
+    }
+
+    .gender {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .link{
+        color: red;
+        text-align: end;
+        display: block;
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <center>
+                <a href="index.html">Home</a>
+                |
+                <a href="form.html">Form Page</a>
+            </center>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <center>
+            <h2>
+                Student Registration Form
+            </h2>
+            <a class="link" href="form.html">Student Registeration Form</a>
+            <form>
+                <br>
+                <div class="field">
+                    <label for="lname">Last Name : </label>
+                    <div class="input">
+                        <input type="text" id="lname" placeholder="Enter your last name">
+                    </div>
+
+                </div>
+                <br>
+                <div class="field">
+                    <label for="mail">Email : </label>
+                    <div class="input">
+                        <input type="email" id="mail" placeholder="it should contain @">
+                    </div>
+
+                </div>
+                <br>
+                <div class="field">
+                    <label for="phone">Mobile : </label>
+                    <div class="input">
+                        <input type="tel" id="phone" maxlength="10" placeholder="only 10 digits are alllowed">
+                    </div>
+
+                </div>
+                <br>
+                <div class="field">
+                    <label for="gender">Gender : </label>
+                    <div class="gender">
+                        <input type="radio" style="width: 21%;" class="radio" name="gender" id="male">
+                        <label style="width: 3%;" for="male">Male</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" class="radio" name="gender" id="female">
+                        <label style="width: 3%;" for="female">Female</label>
+                    </div>
+
+                </div>
+                <br>
+                <div class="field">
+                    <label for="dob">Date Of Birth : </label>
+                    <div class="input">
+                        <input type="date" name="dob" id="dob">
+                    </div>
+
+                </div>
+                <br>
+                <div class="field">
+                    <label for="address">Address : </label>
+                    <div class="input">
+                        <textarea name="address" id="address" cols="82" rows="10"></textarea>
+                    </div>
+
+                </div>
+                <br>
+                <div class="field">
+                    <label for="city">City : </label>
+                    <div class="input">
+                        <input type="text" name="city" id="city">
+                    </div>
+
+                </div>
+                <br>
+                <div class="field">
+                    <label for="pin">Area PIN : </label>
+                    <div class="input">
+                        <input type="number" name="pin" id="pin">
+                    </div>
+
+                </div>
+                <br>
+                <div class="field">
+                    <label for="state">State : </label>
+                    <div class="input">
+                        <input type="text" name="state" id="state">
+                    </div>
+
+                </div>
+                <br>
+                <div class="field">
+                    <label for="qualification">Qualification</label>
+                    <div class="input">
+                        <select name="qualification" id="qualification">
+                            <option value="Select Qualification">Select Qualification</option>
+                            <option value="BSIT">BSIT</option>
+                            <option value="BSCS">BSCS</option>
+                            <option value="BSSE">BSSE</option>
+                            <option value="BSBI">BSBI</option>
+                        </select>
+                    </div>
+                </div>
+                <br>
+                <div class="field">
+                    <label for="specilization">Specilization</label>
+                    <div class="checkbox">
+                        <input type="checkbox" class="checkbox" name="specilization" id="compScience">
+                        <label for="compScience">Computer Science</label>
+                        <br>
+                        <input type="checkbox" class="checkbox" name="specilization" id="it">
+                        <label for="it">Information Technology</label>
+                        <br>
+                        <input type="checkbox" class="checkbox" name="specilization" id="compArchitecture">
+                        <label for="compArchitecture">Computer Architecture</label>
+                        <br>
+                        <input type="checkbox" class="checkbox" name="specilization" id="teleComm">
+                        <label for="teleComm">Tele Communication</label>
+                    </div>
+                    <br>
+                </div>
+                <div class="field">
+                    <label for="password">Password</label>
+                    <div class="input">
+                        <input type="password" id="password">
+                    </div>
+                </div>
+                <br>
+                <button type="submit">
+                    Register
+                </button>
+            </form>
+        </center>
+    </main>
+    <hr>
+    <footer>
+        <center>
+            <p>
+                &copy; | All Rights Reserved 2024
+            </p>
+        </center>
+    </footer>
+</body>
+
+</html>

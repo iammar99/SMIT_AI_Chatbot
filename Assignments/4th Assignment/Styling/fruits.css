@@ -1,0 +1,55 @@
+.fruits {
+    padding: 0 75px;
+}
+
+.fruits-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.fruits-orange {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fruits-heading {
+    margin-bottom: 0;
+}
+
+.fruits-orange-text p {
+    width: 730px;
+}
+
+.heading-p {
+    margin-top: 0;
+}
+
+.fruits img {
+    width: 430px;
+    transform: scale(.6);
+}
+
+.grapes-img{
+    margin-right: 90px;
+    width: 200px !important;
+}
+
+.fruits button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #333;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.fruits button:hover {
+    background-color: #000;
+    justify-self: center;
+}
+
+.orange-heading {
+    font-weight: 400;
+}

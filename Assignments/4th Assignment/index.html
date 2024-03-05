@@ -4,333 +4,950 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4th Assignments</title>
 
-    <!--==================== CSS ====================-->
-    <!-- Hero -->
-    <link rel="stylesheet" href="Styling/hero.css">
-    <!-- Services -->
-    <link rel="stylesheet" href="Styling/services.css">
-    <!-- Fruits -->
-    <link rel="stylesheet" href="Styling/fruits.css">
-    <!-- Reviews -->
-    <link rel="stylesheet" href="Styling/reviews.css">
-    <!-- Contact -->
-    <link rel="stylesheet" href="Styling/contact.css">
-    <!-- Nav -->
-    <link rel="stylesheet" href="Styling/nav.css">
-    <!-- Footer -->
-    <link rel="stylesheet" href="Styling/footer.css">
+    <!-- Favicon icon -->
 
-    <!--==================== Remixicon ====================-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.css">
+    <link rel="shortcut icon" href="./Assets/logo.png" type="image/x-icon">
 
-    <!--==================== UNICONS ====================-->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!-- Font Awsome -->
 
-    <!--==================== UNICONS ====================-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ad7822aef7.js" crossorigin="anonymous"></script>
 
-    <title>Tropiko</title>
+    <!-- Bootstrap Link -->
+
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+
+    <!-- Main Styling -->
+    <link rel="stylesheet" href="./Styles/style.css">
+
+    <!-- Header Styling -->
+    <link rel="stylesheet" href="./Styles/header.css">
+
+    <!-- Home Styling -->
+    <link rel="stylesheet" href="./Styles/home.css">
+
+    <!-- Home Styling -->
+    <link rel="stylesheet" href="./Styles/about.css">
+
+    <!-- Home Styling -->
+    <link rel="stylesheet" href="./Styles/contact.css">
+
+    <!-- Home Styling -->
+    <link rel="stylesheet" href="./Styles/experience.css">
+
+    <!-- Home Styling -->
+    <link rel="stylesheet" href="./Styles/project.css">
 
 </head>
 
+
 <body>
-    <!--==================== Nav ====================-->
-
-    <nav>
-        <div class="nav-logo-container">
-            <img src="Assets/logo.png" alt="logo" class="logo">
-            <h3 class="logo-name">TROPIKO</h3>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#home">
+                    <img src="./Assets/navbar-logo.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <label class="hamburger">
+                        <input type="checkbox">
+                        <svg viewBox="0 0 32 32">
+                            <path class="line line-top-bottom"
+                                d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+                            </path>
+                            <path class="line" d="M7 16 27 16"></path>
+                        </svg>
+                    </label>
+                </button>
+                <div class="collapse navbar-collapse w-0" id="navbarSupportedContent">
+                    <ul class="navbar-nav  ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <span class="navbar-numbering">
+                                01.
+                            </span>
+                            <a class="nav-link ps-1" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <span class="navbar-numbering">
+                                02.
+                            </span>
+                            <a class="nav-link ps-1" href="#expierence">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <span class="navbar-numbering">
+                                03.
+                            </span>
+                            <a class="nav-link ps-1" href="#projects">Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <span class="navbar-numbering">
+                                04.
+                            </span>
+                            <a class="nav-link ps-1" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <span class="navbar-numbering">
+                                05.
+                            </span>
+                            <a class="nav-link ps-1" href="#">Blog</a>
+                        </li>
+                        <li>
+                            <button class="resume-btn">
+                                Resume
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ----------------- Icon Container ----------------- -->
+    <div class="main-icon-contaier">
+        <div class="icons">
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
         </div>
-
-        <ul class="nav-links-container">
-            <li class="nav-links">
-                <a href="#hero" class="nav-link">Home</a>
-            </li>
-
-            <li class="nav-links">
-                <a href="#fruits" class="nav-link">Fruits</a>
-            </li>
-
-            <li class="nav-links">
-                <a href="#services" class="nav-link">Services</a>
-            </li>
-
-            <li class="nav-links">
-                <a href="#contact" class="nav-link">Contact Us</a>
-            </li>
-
-            <li class="nav-links">
-                <a href="#" class="nav-icon"><i class="uil uil-search"></i></a>
-            </li>
-
-            <li class="nav-links">
-                <button class="nav-button">Get A Qoute</button>
-            </li>
-        </ul>
-    </nav>
-
-    <!--==================== Main ====================-->
-
+        <div class="main-line"></div>
+    </div>
+    <!-- ----------------- Email Container ----------------- -->
+    <div class="main-email-container">
+        <div class="mail">
+            <p>
+                <a href="mailto:ahmadjajja86@gmail.com">ahmadjajja86@gmail.com</a>
+            </p>
+        </div>
+        <div class="main-line"></div>
+    </div>
     <main>
-        <!-- Hero -->
-        <div class="hero" id="hero">
-            <div class="hero-left-side">
-                <div class="hero-text">
-                    <h1>Welcome to Our Fruits Shop</h1>
-                    <p>
-                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                        alternation in some form, by injected humor, or randomised words which don't look even slightly
-                        believeable.
-                    </p>
-                </div>
 
-                <div class="hero-buttons">
-                    <button class="hero-button-1 hero-button">SHOP NOW</button>
-                    <button class="hero-button-2 hero-button">CONTACT US</button>
-                </div>
-            </div>
+        <!-- ----------------------------- Section 1 (Home) ----------------------------- -->
 
-            <div class="hero-image">
-                <img src="Assets/slide-img.png" alt="img" class="hero-img">
-            </div>
-        </div>
-
-        <!-- Services -->
-
-        <div class="services" id="services">
-            <div class="services-text">
-                <h1>Our Services</h1>
-                <p>There are many variations of passages of Lorem Ipsum available, but the majority have</p>
-            </div>
-
-            <div class="services-items">
-                <img src="Assets/card-item-1.png" alt="img">
-                <img src="Assets/card-item-2.png" alt="img">
-                <img src="Assets/card-item-3.png" alt="img">
-            </div>
-
-            <div class="services-items-text-container">
-                <div class="services-item-text">
-                    <span class="colored-text">Orange</span>
-                    <p>
-                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                        alternation in some form, by injected humor, or randomised words which don't look even slightly
-                        believeable.
-                    </p>
-                </div>
-
-                <div class="services-item-text">
-                    <span class="colored-text">Orange</span>
-                    <p>
-                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                        alternation in some form, by injected humor, or randomised words which don't look even slightly
-                        believeable.
-                    </p>
-                </div>
-
-                <div class="services-item-text">
-                    <span class="colored-text">Orange</span>
-                    <p>
-                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                        alternation in some form, by injected humor, or randomised words which don't look even slightly
-                        believeable.
-                    </p>
-                </div>
-            </div>
-
-            <div class="services-button">
-                <button>Read More</button>
-            </div>
-        </div>
-
-        <!-- Fruits -->
-
-        <div class="fruits" id="fruits">
-            <div class="fruits-text">
-                <h1 class="fruits-heading">Fresh Fruits</h1>
-                <p class="heading-p">There are many variations of passages of Lorem Ipsum available, but the majority
-                    have
+        <section id="home">
+            <span>
+                <p class="text-start mb-4 first-text  ">
+                    Hi, my name is
                 </p>
-            </div>
-
-            <div class="fruits-orange">
-
-                <div class="fruits-orange-text">
-                    <h1 class="orange-heading">Best Fresh Orange</h1>
-                    <p>
-                        but the majority have suffered
-                        alternation in some form, by injected humor, or randomised words which don't look even slightly
-                        believeable. If you are going to use a passage of Lorem Ipsum, you need to
-                    </p>
-                    <button>Buy Now</button>
-                </div>
-
-                <img src="Assets/orange.png" alt="img">
-            </div>
-
-            <div class="fruits-orange">
-
-                <div class="fruits-orange-text">
-                    <h1 class="orange-heading">Best Fresh Orange</h1>
-                    <p>
-                        but the majority have suffered
-                        alternation in some form, by injected humor, or randomised words which don't look even slightly
-                        believeable. If you are going to use a passage of Lorem Ipsum, you need to
-                    </p>
-                    <button>Buy Now</button>
-                </div>
-
-                <img src="Assets/grapes.png" alt="img" class="grapes-img">
-            </div>
-
-            <div class="fruits-orange">
-
-                <div class="fruits-orange-text">
-                    <h1 class="orange-heading">Best Fresh Orange</h1>
-                    <p>
-                        but the majority have suffered
-                        alternation in some form, by injected humor, or randomised words which don't look even slightly
-                        believeable. If you are going to use a passage of Lorem Ipsum, you need to
-                    </p>
-                    <button>Buy Now</button>
-                </div>
-
-                <img src="Assets/gauva.png" alt="img">
-            </div>
-
-        </div>
-
-        <!-- Testimonial -->
-
-        <div class="reviews" id="reviews">
-            <div class="reviews-text">
-                <h1 class="reviews-heading">Testimonial</h1>
-                <p class="heading-p">There are many variations of passages of Lorem Ipsum available, but the majority
-                    have
+                <h1 class="text-start my-4 second-text">
+                    Ahmad Jajja
+                </h1>
+                <h1 class="text-start my-4 third-text">
+                    Software Engineer and Trainer
+                </h1>
+                <p class="para-1">
+                    A Techy's professional journey revolves around crafting large-scale internet web and mobile
+                    applications using MERN Stack & React Native. Inspired by technological advancements, currently
+                    investing time in Generative AI. A PhD candidate aiming to pursue studies in the United States to
+                    advance in the tech field.
                 </p>
-                <div class="client-info">
-                    <img style="margin: auto;" src="Assets/client.png" alt="img" class="client-img">
-                    <h1>Johnex</h1>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                        alternation in some form, by injected humor, or randomised words which don't look even slightly
-                        believeable. If you are going to use a passage of Lorem Ipsum, you need to</p>
+                <a href="mailto:ahmadjajja86@gmail.com" class="my-4">
+                    <button class="getInTouch-btn">
+                        Get In Touch
+                    </button>
+                </a>
+            </span>
+        </section>
+
+        <!-- ----------------------------- Section 2 (About) ----------------------------- -->
+
+        <section id="about">
+            <div class="container-fluid">
+                <div class="row">
+                    <h1 class="text-start section-heading">
+                        <span>
+                            01.
+                        </span>
+                        About Me
+                    </h1>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-8">
+                        <p class="my-3">
+                            Hello! I'm Ahmad, a full stack software engineer based in Faisalabad, PK.
+                        </p>
+                        <p class="my-3">
+                            I specialize in developing robust web and mobile applications using the MERN Stack and React
+                            Native. I
+                            bring a diverse background, having worked both collaboratively in teams and independently as
+                            a
+                            freelancer, accumulating valuable experiences along the way.
+                        </p>
+                        <p class="my-3">
+                            As a tech trainer at the <a
+                                href="https://pk.worldorgs.com/catalog/faisalabad/accountant/saylani-mass-training-faisalabad">Saylani
+                                Welfare Mass Training & Job Creation Program</a> I've taught
+                            (wanna see how
+                            I provide training to my students? <a
+                                href="https://www.linkedin.com/posts/ahmad-jajja_learn-to-code-with-activity-7151895134744256512-Dmyf?utm_source=share&utm_medium=member_desktop">click
+                                here</a> ) over 500 students, simplifying complex
+                            programming
+                            concepts and solving 250+ LeetCode questions to sharpen my skills. Actively participating in
+                            coding
+                            competitions like Google Code Jam and Meta Hacker Cup and hackathons drives my passion for
+                            continuous
+                            learning and innovation.
+                        </p>
+                        <p class="my-3">
+                            I am still undergraduate student at the <a href="https://web.uaf.edu.pk/">University of
+                                Agriculture</a>, Faisalabadand will be
+                            graduate in
+                            June, 2024.
+                        </p>
+                        <p class="my-3">
+                            I aim to pursue a PhD in the United States to advance in technology research and innovation.
+                        </p>
+                        <p class="my-3">
+                            Here are a few technologies I've been working with recently:
+                        </p>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <ul>
+                                        <li><span><i class="fa-solid fa-caret-right"></i></span> C</li>
+                                        <li><span><i class="fa-solid fa-caret-right"></i></span> Dart</li>
+                                        <li><span><i class="fa-solid fa-caret-right"></i></span> Python</li>
+                                        <li><span><i class="fa-solid fa-caret-right"></i></span> Typescript</li>
+                                        <li><span><i class="fa-solid fa-caret-right"></i></span> CSS3</li>
+                                        <li><span><i class="fa-solid fa-caret-right"></i></span> Chakra-UI</li>
+                                        <li><span><i class="fa-solid fa-caret-right"></i></span> Bootstrap-5</li>
+                                        <li><span><i class="fa-solid fa-caret-right"></i></span> React-Native</li>
+                                        <li><span><i class="fa-solid fa-caret-right"></i></span> FireStore</li>
+                                        <li><span><i class="fa-solid fa-caret-right"></i></span> Express-JS</li>
+                                        <li><span><i class="fa-solid fa-caret-right"></i></span> Git</li>
+                                        <li><span><i class="fa-solid fa-caret-right"></i></span> Rest-APIs</li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <ul>
+                                        <li><span><i class="fa-solid fa-caret-right"></i></span> C++</li>
+                                        <li><span><i class="fa-solid fa-caret-right"></i></span> Java (OOP + DSA)</li>
+                                        <li><span><i class="fa-solid fa-caret-right"></i></span> JavaScript (ES6+)</li>
+                                        <li><span><i class="fa-solid fa-caret-right"></i></span> HTML5</li>
+                                        <li><span><i class="fa-solid fa-caret-right"></i></span> SCSS , SASS</li>
+                                        <li><span><i class="fa-solid fa-caret-right"></i></span> Ant-Design</li>
+                                        <li><span><i class="fa-solid fa-caret-right"></i></span> React-JS</li>
+                                        <li><span><i class="fa-solid fa-caret-right"></i></span> FireBase</li>
+                                        <li><span><i class="fa-solid fa-caret-right"></i></span> Node-JS</li>
+                                        <li><span><i class="fa-solid fa-caret-right"></i></span> Mongo-DB</li>
+                                        <li><span><i class="fa-solid fa-caret-right"></i></span> Github</li>
+                                        <li><span><i class="fa-solid fa-caret-right"></i></span> GraphQl</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="img-box">
+                            <img src="./Assets/img.png" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <!-- Contact -->
+        <!-- ----------------------------- Section 3 (Experience) ----------------------------- -->
 
-        <div class="contact" id="contact">
+        <section id="expierence">
+            <div class="container-fluid">
+                <div class="row">
+                    <h1 class="text-start section-heading">
+                        <span>
+                            02.
+                        </span>
+                        Where I've Worked
+                    </h1>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <div class="experience-links">
+                            <a href="#experience" id="SMIT" class="active" onclick="handleSMIT()">SMIT</a>
+                            <a href="#experience" id="ZWTech" class="" onclick="handleZWTech()">ZWTech</a>
+                            <a href="#experience" id="SEERAHT" class="" onclick="handleSEERAHT()">SEERAHT</a>
+                            <a href="#experience" id="Frelancing" class="" onclick="handleFrelancing()">Frelancing</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <!-- smitDiv -->
+                        <div id="smitDiv">
+                            <h5>
+                                Tech Trainer
+                                <span href="">
+                                    @SMIT
+                                </span>
+                            </h5>
+                            <span class="date">
+                                Dec 2022 - present
+                            </span>
+                            <ul class="my-5">
+                                <li>
+                                    <i class="fa-solid fa-caret-right"></i>
+                                    <span>
+                                        Instructed 500+ students.
+                                    </span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-caret-right"></i>
+                                    <span>
+                                        My role involves delivering comprehensive training sessions on the MERN
+                                        stack,
+                                        covering frontend and backend development, database management, and mobile
+                                        app
+                                        development using React Native.
+                                    </span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-caret-right"></i>
+                                    <span>
+                                        I aim to empower students to become proficient MERN stack developers,
+                                        providing
+                                        them with practical knowledge and guidance to build real-world applications
+                                        using the MERN stack.
+                                    </span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-caret-right"></i>
+                                    <span>
+                                        Providing instructions in HTML5, CSS3, SCSS, SASS, Bootstrap 5, JavaScript
+                                        ES6+,
+                                        TypeScript, React JS (Context API, Router, State Management), React Native,
+                                        Redux, Firebase, Firestore, Node JS (ExpressJS, Authentication, API Endpoint
+                                        Handling), MongoDB, Heroku, Surge, Netlify (Hosting), Git, Github.
+                                    </span>
+                                </li>
+                            </ul>
+                            <span>
+                                🔄 Courses
+                            </span>
+                            <ul class="courses">
+                                <li>
+                                    <i class="fa-solid fa-caret-right"></i>
+                                    <a href="">
+                                        GenAI_Chatbot_1.0
+                                        <span class="course-status">
+                                            (Current)
+                                        </span>
 
-            <div class="contact-inputs">
+                                    </a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-caret-right"></i>
+                                    <a href="">
+                                        Backend_Development_1.0
+                                        <span class="course-status">
+                                            (Completed)
+                                        </span>
 
-                <h1>Contact Us</h1>
+                                    </a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-caret-right"></i>
+                                    <a href="">
+                                        Full_Stack_Development_1.0
+                                        <span class="course-status">
+                                            (Current)
+                                        </span>
 
-                <input placeholder="Name" type="text" name="name" id="name">
-                <input placeholder="Phone Number" type="tel" name="name" id="email">
-                <input placeholder="Email" type="email" name="name" id="number">
+                                    </a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-caret-right"></i>
+                                    <a href="">
+                                        Web_Designing_Bootcamp_1.0
+                                        <span class="course-status">
+                                            (Completed)
+                                        </span>
 
-                <textarea placeholder="Message" name="message" id="message" rows="1"></textarea>
-                <button type="submit">Send</button>
+                                    </a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-caret-right"></i>
+                                    <a href="">
+                                        Web_Designing_Bootcamp_2.0
+                                        <span class="course-status">
+                                            (Completed)
+                                        </span>
 
+                                    </a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-caret-right"></i>
+                                    <a href="">
+                                        Frontend_Web_Development_1.0
+                                        <span class="course-status">
+                                            (Completed)
+                                        </span>
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-caret-right"></i>
+                                    <a href="">
+                                        Frontend_Mobile_Development_1.0
+                                        <span class="course-status">
+                                            (Completed)
+                                        </span>
+
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- zwtechDiv -->
+                        <div id="zwtechDiv">
+                            <h5>
+                                MERN Stack Developer
+                                <span href="">
+                                    @ZWTech
+                                </span>
+                            </h5>
+                            <span class="date">
+                                Sep 2022 - Mar 2023
+                            </span>
+                            <ul class="my-5">
+                                <li>
+                                    <i class="fa-solid fa-caret-right"></i>
+                                    <span>
+                                        Implemented new features and modified existing ones on the front-end using React
+                                        JS
+                                        for a business website similar to LinkedIn, specifically designed for employee
+                                        recruitment for a UAE-based client.
+                                    </span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-caret-right"></i>
+                                    <span>
+                                        Built a GraphQL API from scratch and modified existing GraphQL APIs using
+                                        Node.js on
+                                        the back-end, facilitating efficient data management and integration with the
+                                        Dashboard.
+                                    </span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-caret-right"></i>
+                                    <span>
+                                        Contributed to the development of a comprehensive platform that streamlined the
+                                        hiring process for companies, leveraging React JS for the front-end and a robust
+                                        GraphQL API with Node.js on the back-end, enhancing the client's ability to find
+                                        and
+                                        hire suitable employees.
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- seerahtDiv -->
+                        <div id="seerahtDiv">
+                            <h5>
+                                MERN Stack Developer
+                                <span href="">
+                                    @SEEHRAT
+                                </span>
+                            </h5>
+                            <span class="date">
+                                May 2022 - Aug 2022
+                            </span>
+                            <ul class="my-5">
+                                <li>
+                                    <i class="fa-solid fa-caret-right"></i>
+                                    <span>
+
+                                        Developed and maintained web applications using the MERN stack, focusing on
+                                        delivering high-quality, scalable, and efficient code for clients at Seeraht
+                                        software company.
+                                    </span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-caret-right"></i>
+                                    <span>
+                                        Collaborated with cross-functional teams to understand business requirements and
+                                        implemented technical solutions, utilizing modern development techniques to
+                                        design and implement complex software features.
+                                    </span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-caret-right"></i>
+                                    <span>
+
+                                        Conducted code reviews, participated in the software development lifecycle, and
+                                        troubleshooted and debugged code issues. Demonstrated a deep understanding of
+                                        the MERN stack, Agile development practices, and effective communication and
+                                        collaboration skills to create cutting-edge web applications that transformed
+                                        business operations.
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- freelancingDiv -->
+                        <div id="freelancingDiv">
+                            <h5>
+                                MERN Stack Developer
+                                <span href="">
+                                    @Fb and local Clients
+                                </span>
+                            </h5>
+                            <span class="date">
+                                Nov 2021 - present
+                            </span>
+                            <ul class="my-5">
+                                <li>
+                                    <i class="fa-solid fa-caret-right"></i>
+                                    <span>
+                                        Developed and delivered a wide range of web-based solutions, utilizing front-end
+                                        technologies such as HTML, CSS, and JavaScript, as well as back-end technologies
+                                        such as Node.js and Express js.
+                                    </span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-caret-right"></i>
+                                    <span>
+                                        Built and maintained strong relationships with clients through effective
+                                        communication and problem-solving skills, ensuring timely completion and
+                                        adherence to project requirements.
+                                    </span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-caret-right"></i>
+                                    <span>
+                                        Accomplished in utilizing version control systems such as Git and SVN, and
+                                        implementing agile methodologies for efficient project management.
+                                    </span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-caret-right"></i>
+                                    <span>
+                                        Proven ability to work independently as well as part of a team, successfully
+                                        delivering projects on time and within budget.
+                                    </span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-caret-right"></i>
+                                    <span>
+                                        Experience with database management systems such as MongoDB.
+                                    </span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-caret-right"></i>
+                                    <span>
+                                        Experience with database management systems such as MongoDB.
+                                    </span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-caret-right"></i>
+                                    <span>
+                                        Experience in integrating web applications with third-party APIs and services.
+                                    </span>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <div><img src="Assets/orange-dish.png" alt=""></div>
+        <!-- ----------------------------- Projects ----------------------------- -->
 
-        </div>
+        <section id="projects">
+            <div class="container-fluid">
+                <h2>
+                    Other Projects
+                </h2>
+                <div class="row my-4 mt-5">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="project-card ">
+                            <div class="icons">
+                                <i class="fa-regular fa-folder" style="color: var(--themeColor);"></i>
+                                <i class="fa-brands fa-github"></i>
+                            </div>
+                            <h3 class="project-title">
+                                Full Stack E-Commerce Mobile App Frontend
+                            </h3>
+                            <p class="description">
+                                E-commerce mobile app with user registration, product catalog, cart, wishlist, checkout,
+                                payment, order tracking, and admin dashboard.
+                            </p>
+                            <p class="skills-used">
+                                JavaScript, React-Native, Redux, Context-API, Native-Base, Node-JS, Express JS, Mongodb
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="project-card ">
+                            <div class="icons">
+                                <i class="fa-regular fa-folder" style="color: var(--themeColor);"></i>
+                                <i class="fa-brands fa-github"></i>
+                            </div>
+                            <h3 class="project-title">
+                                Full Stack E-Commerce Mobile App Frontend
+                            </h3>
+                            <p class="description">
+                                E-commerce mobile app with user registration, product catalog, cart, wishlist, checkout,
+                                payment, order tracking, and admin dashboard.
+                            </p>
+                            <p class="skills-used">
+                                JavaScript, React-Native, Redux, Context-API, Native-Base, Node-JS, Express JS, Mongodb
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="project-card ">
+                            <div class="icons">
+                                <i class="fa-regular fa-folder" style="color: var(--themeColor);"></i>
+                                <i class="fa-brands fa-github"></i>
+                            </div>
+                            <h3 class="project-title">
+                                Full Stack E-Commerce Mobile App Frontend
+                            </h3>
+                            <p class="description">
+                                E-commerce mobile app with user registration, product catalog, cart, wishlist, checkout,
+                                payment, order tracking, and admin dashboard.
+                            </p>
+                            <p class="skills-used">
+                                JavaScript, React-Native, Redux, Context-API, Native-Base, Node-JS, Express JS, Mongodb
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="project-card ">
+                            <div class="icons">
+                                <i class="fa-regular fa-folder" style="color: var(--themeColor);"></i>
+                                <i class="fa-brands fa-github"></i>
+                            </div>
+                            <h3 class="project-title">
+                                Full Stack E-Commerce Mobile App Frontend
+                            </h3>
+                            <p class="description">
+                                E-commerce mobile app with user registration, product catalog, cart, wishlist, checkout,
+                                payment, order tracking, and admin dashboard.
+                            </p>
+                            <p class="skills-used">
+                                JavaScript, React-Native, Redux, Context-API, Native-Base, Node-JS, Express JS, Mongodb
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="project-card ">
+                            <div class="icons">
+                                <i class="fa-regular fa-folder" style="color: var(--themeColor);"></i>
+                                <i class="fa-brands fa-github"></i>
+                            </div>
+                            <h3 class="project-title">
+                                Full Stack E-Commerce Mobile App Frontend
+                            </h3>
+                            <p class="description">
+                                E-commerce mobile app with user registration, product catalog, cart, wishlist, checkout,
+                                payment, order tracking, and admin dashboard.
+                            </p>
+                            <p class="skills-used">
+                                JavaScript, React-Native, Redux, Context-API, Native-Base, Node-JS, Express JS, Mongodb
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="project-card ">
+                            <div class="icons">
+                                <i class="fa-regular fa-folder" style="color: var(--themeColor);"></i>
+                                <i class="fa-brands fa-github"></i>
+                            </div>
+                            <h3 class="project-title">
+                                Full Stack E-Commerce Mobile App Frontend
+                            </h3>
+                            <p class="description">
+                                E-commerce mobile app with user registration, product catalog, cart, wishlist, checkout,
+                                payment, order tracking, and admin dashboard.
+                            </p>
+                            <p class="skills-used">
+                                JavaScript, React-Native, Redux, Context-API, Native-Base, Node-JS, Express JS, Mongodb
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-container d-flex justify-content-center">
+                    <button class="showMore-btn mx-auto" id="showMore" onclick="handleShow()">
+                        Show More
+                    </button>
+                </div>
+                <div class="container-fluid " id="second-row">
+                    <div class="row my-4">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="project-card ">
+                                <div class="icons">
+                                    <i class="fa-regular fa-folder" style="color: var(--themeColor);"></i>
+                                    <i class="fa-brands fa-github"></i>
+                                </div>
+                                <h3 class="project-title">
+                                    Full Stack E-Commerce Mobile App Frontend
+                                </h3>
+                                <p class="description">
+                                    E-commerce mobile app with user registration, product catalog, cart, wishlist,
+                                    checkout,
+                                    payment, order tracking, and admin dashboard.
+                                </p>
+                                <p class="skills-used">
+                                    JavaScript, React-Native, Redux, Context-API, Native-Base, Node-JS, Express JS,
+                                    Mongodb
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="project-card ">
+                                <div class="icons">
+                                    <i class="fa-regular fa-folder" style="color: var(--themeColor);"></i>
+                                    <i class="fa-brands fa-github"></i>
+                                </div>
+                                <h3 class="project-title">
+                                    Full Stack E-Commerce Mobile App Frontend
+                                </h3>
+                                <p class="description">
+                                    E-commerce mobile app with user registration, product catalog, cart, wishlist,
+                                    checkout,
+                                    payment, order tracking, and admin dashboard.
+                                </p>
+                                <p class="skills-used">
+                                    JavaScript, React-Native, Redux, Context-API, Native-Base, Node-JS, Express JS,
+                                    Mongodb
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="project-card ">
+                                <div class="icons">
+                                    <i class="fa-regular fa-folder" style="color: var(--themeColor);"></i>
+                                    <i class="fa-brands fa-github"></i>
+                                </div>
+                                <h3 class="project-title">
+                                    Full Stack E-Commerce Mobile App Frontend
+                                </h3>
+                                <p class="description">
+                                    E-commerce mobile app with user registration, product catalog, cart, wishlist,
+                                    checkout,
+                                    payment, order tracking, and admin dashboard.
+                                </p>
+                                <p class="skills-used">
+                                    JavaScript, React-Native, Redux, Context-API, Native-Base, Node-JS, Express JS,
+                                    Mongodb
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row my-4">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="project-card ">
+                                <div class="icons">
+                                    <i class="fa-regular fa-folder" style="color: var(--themeColor);"></i>
+                                    <i class="fa-brands fa-github"></i>
+                                </div>
+                                <h3 class="project-title">
+                                    Full Stack E-Commerce Mobile App Frontend
+                                </h3>
+                                <p class="description">
+                                    E-commerce mobile app with user registration, product catalog, cart, wishlist,
+                                    checkout,
+                                    payment, order tracking, and admin dashboard.
+                                </p>
+                                <p class="skills-used">
+                                    JavaScript, React-Native, Redux, Context-API, Native-Base, Node-JS, Express JS,
+                                    Mongodb
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="project-card ">
+                                <div class="icons">
+                                    <i class="fa-regular fa-folder" style="color: var(--themeColor);"></i>
+                                    <i class="fa-brands fa-github"></i>
+                                </div>
+                                <h3 class="project-title">
+                                    Full Stack E-Commerce Mobile App Frontend
+                                </h3>
+                                <p class="description">
+                                    E-commerce mobile app with user registration, product catalog, cart, wishlist,
+                                    checkout,
+                                    payment, order tracking, and admin dashboard.
+                                </p>
+                                <p class="skills-used">
+                                    JavaScript, React-Native, Redux, Context-API, Native-Base, Node-JS, Express JS,
+                                    Mongodb
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="project-card ">
+                                <div class="icons">
+                                    <i class="fa-regular fa-folder" style="color: var(--themeColor);"></i>
+                                    <i class="fa-brands fa-github"></i>
+                                </div>
+                                <h3 class="project-title">
+                                    Full Stack E-Commerce Mobile App Frontend
+                                </h3>
+                                <p class="description">
+                                    E-commerce mobile app with user registration, product catalog, cart, wishlist,
+                                    checkout,
+                                    payment, order tracking, and admin dashboard.
+                                </p>
+                                <p class="skills-used">
+                                    JavaScript, React-Native, Redux, Context-API, Native-Base, Node-JS, Express JS,
+                                    Mongodb
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-container d-flex justify-content-center">
+                    <button class="showLess-btn mx-auto" id="showLess" onclick="handleHide()">
+                        Show Less
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ----------------------------- Section 5 (Contact) ----------------------------- -->
+
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h6 class="contact-heading">
+                            04. &nbsp; What's Next ?
+                        </h6>
+                        <h1 class="getInTouch-heading">
+                            Get In Touch
+                        </h1>
+                        <p class="my-4">
+                            I'm currently in a search of new and better opportunities. My inbox is always open.
+                            Whether you wanna hire or just say hi, I'll try my best to get back to you
+                        </p>
+                        <button class="contact-btn">
+                            Sat Hello
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
-
-    <!-- Footer -->
-
-    <footer class="footer" id="footer">
-
-        <div class="footer-links">
-            <div class="footer-links-col-1">
-
-                <ul>
-                    <li>
-                        <a href=""><span>Fruits</span></a>
-                    </li>
-
-                    <li>
-                        <p>
-                            randomised words which don't look even slightly
-                            believeable. If you are going to use a passage of Lorem Ipsum
-                        </p>
-                    </li>
-                </ul>
-
-            </div>
-
-            <div class="footer-links-col-1">
-
-                <ul>
-                    <li>
-                        <a href=""><span>Services</span></a>
-                    </li>
-
-                    <li>
-                        <p>
-                            randomised words which don't look even slightly
-                            believeable. If you are going to use a passage of Lorem Ipsum
-                        </p>
-                    </li>
-                </ul>
-
-            </div>
-
-            <div class="footer-links-col-1">
-
-                <ul>
-                    <li>
-                        <a href=""><span>List</span></a>
-                    </li>
-
-                    <li>
-                        <p>
-                            randomised words which don't look even slightly
-                            believeable. If you are going to use a passage of Lorem Ipsum
-                        </p>
-                    </li>
-                </ul>
-
-            </div>
-
-            <div class="footer-links-col-1">
-
-                <ul>
-                    <li>
-                        <a href=""><span>Follow Us</span></a>
-                    </li>
-
-                    <li style="display: flex; justify-content: space-between; margin-top: 20px; text-align: start;">
-                        <img src="Assets/fb.png" alt="icon">
-                        <img src="Assets/twitter.png" alt="icon">
-                        <img src="Assets/linkedin.png" alt="icon">
-                        <img src="Assets/instagram.png" alt="icon">
-                    </li>
-
-                    <li
-                        style="display: flex; flex-direction: column; justify-content: space-between; margin-top: 20px; text-align: start;">
-                        <span>Subscribe Now</span>
-                        <input type="email" name="email">
-                        <button>Subscribe</button>
-                    </li>
-                </ul>
-
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="text-center my-2 text-light fs-4">
+                        &copy; <span id="date"></span>
+                        |
+                        Developed by
+                        <span class="developer-name">
+                            Ammar
+                        </span>
+                    </p>
+                </div>
             </div>
         </div>
-
-        <div class="copy">
-            <p>Copyright &copy; 2022 All Rights Reserved By Dev Umair</p>
-        </div>
-
     </footer>
-
 </body>
+
+<!-- Bootstrap Link -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JS -->
+
+<script>
+
+    // ------------------ Links variable ------------------
+
+    let SMIT = document.getElementById("SMIT")
+    let ZWTech = document.getElementById("ZWTech")
+    let SEERAHT = document.getElementById("SEERAHT")
+    let Frelancing = document.getElementById("Frelancing")
+
+    // ------------------ Div variable ------------------
+
+    let smitDiv = document.getElementById("smitDiv")
+    let zwtechDiv = document.getElementById("zwtechDiv")
+    let seerahtDiv = document.getElementById("seerahtDiv")
+    let freelancingDiv = document.getElementById("freelancingDiv")
+
+    const handleSMIT = () => {
+        // Show handleSMIT section when click on it
+        // ------------------ Link Changing ------------------
+        SMIT.classList.add("active")
+        ZWTech.classList.remove("active")
+        SEERAHT.classList.remove("active")
+        Frelancing.classList.remove("active")
+        // ------------------ Div Changing ------------------
+        smitDiv.style.display = "block"
+        seerahtDiv.style.display = "none"
+        zwtechDiv.style.display = "none"
+        freelancingDiv.style.display = "none"
+    }
+    const handleZWTech = () => {
+        // Show handleZWTech section when click on it
+        // ------------------ Link Changing ------------------
+        ZWTech.classList.add("active")
+        SMIT.classList.remove("active")
+        SEERAHT.classList.remove("active")
+        Frelancing.classList.remove("active")
+        // ------------------ Div Changing ------------------
+        zwtechDiv.style.display = "block"
+        smitDiv.style.display = "none"
+        seerahtDiv.style.display = "none"
+        freelancingDiv.style.display = "none"
+    }
+    const handleSEERAHT = () => {
+        // Show handleSEERAHT section when click on it
+        // ------------------ link Changing ------------------
+        SEERAHT.classList.add("active")
+        SMIT.classList.remove("active")
+        ZWTech.classList.remove("active")
+        Frelancing.classList.remove("active")
+        // ------------------ Div Changing ------------------
+        seerahtDiv.style.display = "block"
+        smitDiv.style.display = "none"
+        zwtechDiv.style.display = "none"
+        freelancingDiv.style.display = "none"
+    }
+    const handleFrelancing = () => {
+        // Show handleFrelancing section when click on it
+        // ------------------ Link Changing ------------------
+        Frelancing.classList.add("active")
+        SMIT.classList.remove("active")
+        ZWTech.classList.remove("active")
+        SEERAHT.classList.remove("active")
+        // ------------------ div Changing ------------------
+        freelancingDiv.style.display = "block"
+        smitDiv.style.display = "none"
+        seerahtDiv.style.display = "none"
+        zwtechDiv.style.display = "none"
+    }
+
+    // ---------------- Projects Displaying ----------------
+
+    let projects = document.getElementById("second-row")
+    let showMore = document.getElementById("showMore")
+    let showLess = document.getElementById("showLess")
+    const handleShow = () => {
+        projects.style.display = "block"
+        showMore.style.display = "none"
+        showLess.style.display = "block"
+    }
+
+
+    const handleHide = () => {
+        projects.style.display = "none"
+        showMore.style.display = "block"
+        showLess.style.display = "none"
+    }
+
+    // ---------------------------- Date ----------------------------
+
+    let date = new Date
+    date = date.getFullYear()
+    document.getElementById("date").innerHTML = date
+
+</script>
 
 </html>

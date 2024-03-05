@@ -1,0 +1,45 @@
+section#contact {
+    min-height: 100vh;
+}
+
+section#contact .container .row .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 141px 0px;
+}
+
+h6.contact-heading {
+    color: var(--themeColor);
+    text-align: center;
+    width: fit-content;
+}
+
+h1.getInTouch-heading {
+    width: fit-content;
+    color: aliceblue;
+    font-weight: 890;
+    font-size: 40px;
+}
+
+
+section#contact p {
+    color: var(--paraColor);
+    text-align: center;
+    width: 50%;
+}
+
+button.contact-btn {
+    color: var(--themeColor);
+    border: 1px solid white;
+    padding: 16px 24px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-top: 10px;
+    transition: all .3s ease;
+}
+
+button.contact-btn:hover {
+    background-color: #133040;
+}

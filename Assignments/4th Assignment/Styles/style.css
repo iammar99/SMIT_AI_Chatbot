@@ -1,0 +1,134 @@
+/* theme color variable */
+:root {
+    --themeColor: rgb(100 255 218);
+    --themeFont: monospace;
+    --paraColor: #8892b0;
+}
+
+* {
+    background-color: #0a192f;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+/* ------------------------  Main Icon container ------------------------ */
+
+
+div.main-line {
+    width: 100%;
+    width: aliceblue;
+    display: block;
+    background: antiquewhite;
+    height: 1px;
+}
+
+.main-icon-contaier .icons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 26%;
+}
+
+.main-icon-contaier .icons i {
+    transform: rotate(270deg);
+    color: white;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.main-icon-contaier {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    transform: rotate(90deg);
+    position: fixed;
+    bottom: 0;
+    left: -290px;
+}
+
+/* ------------------------  Main Email container ------------------------ */
+
+
+div.main-line {
+    width: 100%;
+    width: aliceblue;
+    display: block;
+    background: antiquewhite;
+    height: 1px;
+}
+
+.main-email-container {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    transform: rotate(90deg);
+    position: fixed;
+    bottom: 0;
+    right: -281px;
+}
+
+.main-email-container a {
+    text-decoration: none;
+    color: white;
+}
+
+.main-email-container .mail {
+    margin-right: 15px;
+}
+
+.icons i:hover {
+    color: var(--themeColor);
+}
+
+
+/* ------------------------  Section Heading ------------------------ */
+
+.section-heading span {
+    color: var(--themeColor);
+    font-size: 21px;
+    margin-right: 4px;
+    font-family: var(--themeFont);
+}
+
+.section-heading  {
+    color: var(--paraColor);
+}
+
+
+/* ------------------------  Footer >> Developer Name ------------------------ */
+
+span.developer-name {
+    color: var(--themeColor);
+    font-weight: 900;
+    font-size: 29px;
+}
+
+@media screen and (max-width:1200px) {
+    .main-icon-contaier {
+        left: -236px;
+    }
+
+    .main-email-container {
+        right: -210px;
+    }
+}
+
+
+@media screen and (max-width:900px) {
+    .main-icon-contaier {
+        left: -150px;
+    }
+
+    .main-email-container {
+        right: -200px;
+    }
+}
+
+@media screen and (max-width:771px) {
+
+    .main-icon-contaier,
+    .main-email-container {
+        display: none;
+    }
+}

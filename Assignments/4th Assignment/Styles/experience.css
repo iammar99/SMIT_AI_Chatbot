@@ -1,0 +1,197 @@
+section#expierence {
+    margin: 50px 0px;
+    border: 0;
+    padding: 10px 75px;
+    min-height: 100vh;
+}
+
+.experience-links {
+    width: 70%;
+    height: 160px;
+    border-left: 1px solid white;
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-links a {
+    text-decoration: none;
+    height: 40px;
+    color: var(--paraColor);
+    font-size: large;
+    font-weight: 900;
+    padding-left: 18px;
+    display: flex;
+    align-items: center;
+    transition: all .3s ease;
+}
+
+.experience-links a:hover {
+    color: var(--themeColor);
+    background-color: #172a45;
+}
+
+.experience-links a.active {
+    color: var(--themeColor);
+    background-color: #172a45;
+    border-left: 2px solid var(--themeColor);
+}
+
+/* ------------------- SMIT  ------------------- */
+
+#smitDiv {
+    display: block;
+    color: var(--paraColor);
+}
+
+#smitDiv ul.courses li {
+    font-size: 20px;
+}
+
+#smitDiv ul.courses span.course-status {
+    color: var(--paraColor);
+}
+
+#smitDiv ul.courses li a {
+    text-decoration: none;
+    color: var(--themeColor);
+    width: fit-content;
+    display: inline-block;
+}
+
+#smitDiv ul.courses li a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: var(--themeColor);
+    display: block;
+    transition: 0.4s;
+}
+
+#smitDiv ul.courses li a:hover::after {
+    width: 100%;
+}
+
+
+/* ------------------- ZWTECH DIV / Seeraht / Freelancing / SMIT ------------------- */
+
+#zwtechDiv,
+#seerahtDiv,
+#freelancingDiv {
+    display: none;
+    color: var(--paraColor);
+}
+
+#zwtechDiv h5,
+#seerahtDiv h5,
+#freelancingDiv h5,
+#smitDiv h5 {
+    font-size: 18px;
+}
+
+#zwtechDiv h5 span,
+#seerahtDiv h5 span,
+#freelancingDiv h5 span,
+#smitDiv h5 span {
+    text-decoration: none;
+    color: var(--themeColor);
+    width: fit-content;
+    display: inline-block;
+}
+
+/* ------------------- ZWTECH DIV / Seeraht / Freelancing  hover a effect ------------------- */
+
+#zwtechDiv h5 span::after,
+#seerahtDiv h5 span::after,
+#freelancingDiv h5 span::after,
+#smitDiv h5 span::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: var(--themeColor);
+    display: block;
+    transition: 0.4s;
+}
+
+#zwtechDiv h5 span:hover::after,
+#seerahtDiv h5 span:hover::after,
+#freelancingDiv h5 span:hover::after,
+#smitDiv h5 span:hover::after {
+    width: 100%;
+}
+
+#zwtechDiv li,
+#seerahtDiv li,
+#freelancingDiv li,
+#smitDiv li {
+    font-size: 14px;
+    list-style: none;
+    margin: 20px 0px;
+}
+
+
+#zwtechDiv ul i,
+#seerahtDiv ul i,
+#freelancingDiv ul i,
+#smitDiv ul i {
+    color: var(--themeColor);
+}
+
+
+#zwtechDiv li span,
+#seerahtDiv li span,
+#freelancingDiv li span,
+#smitDiv li span {
+    margin-left: 13px;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:771px) {
+    section#expierence {
+        padding: 10px 64px;
+    }
+
+    .experience-links {
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        border-left: 0;
+        border-bottom: 1px solid white;
+        margin-bottom: 30px;
+        width: fit-content;
+        margin: 30px auto;
+    }
+
+    .experience-links a {
+        height: 40px;
+        padding: 5px 20px;
+        font-size: 10px;
+    }
+    
+    .experience-links a.active {
+        font-size: 10px;
+        text-decoration: none;
+        height: 40px;
+        color: var(--paraColor);
+        font-weight: 900;
+        padding: 5px 20px;
+        display: flex;
+        align-items: center;
+        border-left: 0;
+        border-bottom: 2px solid var(--themeColor);
+    }
+}
+
+@media screen and (max-width:551px) {
+    section#expierence {
+        padding: 10px 26px;
+    }
+    #smitDiv ul.courses li a {
+        font-size: 15px;
+    }
+}

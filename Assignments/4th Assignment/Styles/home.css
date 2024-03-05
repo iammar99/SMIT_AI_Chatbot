@@ -1,0 +1,61 @@
+section#home {
+    border: 0;
+    padding: 10px 160px;
+    min-height: 100vh;
+}
+
+
+p.text-start.first-text {
+    margin: 0px;
+    color: var(--themeColor);
+    font-size: xx-large;
+}
+
+
+h1.text-start.second-text {
+    font-size: 90px;
+    font-weight: 800;
+    font-family: monospace;
+    color: white;
+}
+
+h1.text-start.third-text {
+    font-size: 55px;
+    font-weight: 900;
+    font-family: monospace;
+    color: var(--paraColor);
+}
+
+p.para-1 {
+    color: var(--paraColor);
+    margin: 15px 0px;
+    width: 90%;
+}
+
+button.getInTouch-btn {
+    color: var(--themeColor);
+    border: 1px solid var(--themeColor);
+    padding: 16px 24px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-top: 10px;
+    transition: all .3s ease;
+}
+button.getInTouch-btn:hover {
+    background-color: #133040;
+}
+
+
+
+@media screen and (max-width:771px) {
+    section#home {
+        border: 0;
+        padding: 0px 25px;
+    }
+    h1.text-start.second-text {
+        font-size: 63px;
+    }
+    h1.text-start.third-text {
+        font-size: 39px;
+    }
+}

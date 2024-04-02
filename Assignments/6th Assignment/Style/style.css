@@ -113,3 +113,10 @@ footer {
         width: 100%;
     }
 }
+
+@media screen and (max-width:400px) {
+    button.fun-btn {
+        margin: 20px 7px;
+        padding: 10px 10px;
+    }
+}

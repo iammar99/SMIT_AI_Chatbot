@@ -148,24 +148,77 @@ a.language-link:hover {
 
 .lower-footer {
     background: #0D141E;
-    min-height: 500px;
-    display: flex;
-    align-items: center;
+    min-height: fit-content;
     color: white;
-    justify-content: center;
+    padding-top: 63px;
+    padding-bottom: 23px;
 }
 
-a.lower-footer-links:hover{
+a.lower-footer-links:hover {
     text-decoration: underline;
     color: white;
 }
+
 .parent {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 17px;
-    grid-row-gap: 21px;
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 18px;
+    grid-row-gap: 18px;
+    width: 85%;
+    height: 269px;
+    font-size: 11px;
+    margin: auto;
+}
+
+.parent a:hover {
+    text-decoration: none;
+}
+
+
+.parent b:hover {
+    text-decoration: underline white;
+}
+
+
+.parent a div {
+    color: #918f95;
+}
+
+
+.parent a div:hover {
+    text-decoration: underline #918f95;
+}
+
+.div1 {
+    grid-area: 4 / 1 / 5 / 2;
+}
+
+.div2 {
+    grid-area: 4 / 7 / 5 / 8;
+}
+
+.links {
+    color: white;
+    margin: auto;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.links a{
+    color: white;
+}
+
+.links .container .row a:hover{
+    text-decoration: underline white;
+}
+
+/* --------------------------- Media Queries --------------------------- */
+
+@media screen and (max-width:991px) {
+    .parent {
+        display: none;
     }
-    
-    .div1 { grid-area: 5 / 1 / 6 / 2; }
-    .div2 { grid-area: 5 / 7 / 6 / 8; }
+}

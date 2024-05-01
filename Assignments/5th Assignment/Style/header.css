@@ -601,3 +601,146 @@ div#morelinks {
         width: 22%;
     }
 }
+
+
+
+/* -------------------------------------- Bottom Nav  -------------------------------------- */
+
+.bottom-nav {
+    background-color: #37475a;
+    color: white;
+    width: 100%;
+    min-height: 30px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.bottom-nav a {
+    color: white;
+    margin: 0px 5px ;
+}
+
+.bottom-nav a:hover {
+    border: 1px solid white;
+    text-decoration: none;
+}
+
+
+/* ------------------------- Bottom Nav  ------------------------- */
+
+.big-burger {
+    position: relative;
+    width: 40px;
+    height: 30px;
+    background: transparent;
+    cursor: pointer;
+    display: block;
+  }
+  
+  .big-burger input {
+    display: none;
+  }
+  
+  .big-burger span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: black;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+  }
+  
+  .big-burger span:nth-of-type(1) {
+    top: 0px;
+    transform-origin: left center;
+  }
+  
+  .big-burger span:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+    transform-origin: left center;
+  }
+  
+  .big-burger span:nth-of-type(3) {
+    top: 100%;
+    transform-origin: left center;
+    transform: translateY(-100%);
+  }
+  
+  .big-burger input:checked ~ span:nth-of-type(1) {
+    transform: rotate(45deg);
+    top: 0px;
+    left: 5px;
+  }
+  
+  .big-burger input:checked ~ span:nth-of-type(2) {
+    width: 0%;
+    opacity: 0;
+  }
+  
+  .big-burger input:checked ~ span:nth-of-type(3) {
+    transform: rotate(-45deg);
+    top: 28px;
+    left: 5px;
+  }
+
+@media screen and (max-width:991px) {
+    .bottom-nav{
+    display: none;
+   } 
+}
+
+
+/* ------------------------- Bottom Nav  ------------------------- */
+
+.big-nav {
+    width: 40%;
+    position: fixed;
+    background: white;
+    min-height: 100vh;
+    z-index: 5;
+    left: -100%;
+    transition: all 0.3s ease;
+}
+
+.big-burger-active {
+    z-index: 10;
+    left: 62%;
+    top: 1%;
+    position: absolute;
+}
+
+.bigNav-header {
+    background: #232f3e;
+    color: white;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 31px;
+    font-weight: 600;
+}
+
+.bigNav-header a {
+    color: white;
+}
+
+/* ------------------------- Bottom Nav Menu  ------------------------- */
+
+button.digital-content-btns{
+    background-color: transparent;
+    padding: 10px 23px;
+    border: 0;
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.5s ease;
+}
+
+button.digital-content-btns:hover{
+    background-color: antiquewhite;
+}

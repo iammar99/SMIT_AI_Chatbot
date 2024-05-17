@@ -15,7 +15,7 @@ const handlefun2 = () => {
     let str1 = prompt("Enter first valid String", "")
     let str2 = prompt("Enter second valid String", "")
     let result = str1 + str2
-    output.innerHTML = `The result after concatenation of both string id ${result}`
+    output.innerHTML = `The result after concatenation of both string is ${result}`
 }
 
 // ----------- handlefun3 ==> (Determine if a given string is empty) -----------

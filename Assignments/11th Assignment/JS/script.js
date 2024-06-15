@@ -189,13 +189,37 @@ const calculate = () => {
             operatorToDisplay = ""
             break;
         case "cos":
-            current_value = Math.sin(current_value)
+            current_value = Math.cos(current_value)
             prev_value = ""
             operator = ""
             operatorToDisplay = ""
             break;
         case "tan":
-            current_value = Math.sin(current_value)
+            current_value = Math.tan(current_value)
+            prev_value = ""
+            operator = ""
+            operatorToDisplay = ""
+            break;
+        case "cosec":
+            current_value = 1 / Math.sin(current_value)
+            prev_value = ""
+            operator = ""
+            operatorToDisplay = ""
+            break;
+        case "sec":
+            current_value = 1 / Math.cos(current_value)
+            prev_value = ""
+            operator = ""
+            operatorToDisplay = ""
+            break;
+        case "cot":
+            current_value = 1 / Math.tan(current_value)
+            prev_value = ""
+            operator = ""
+            operatorToDisplay = ""
+            break;
+        case "√":
+            current_value = Math.sqrt(current_value)
             prev_value = ""
             operator = ""
             operatorToDisplay = ""
@@ -212,10 +236,16 @@ const handleFun = (op) => {
     if (operator) {
         calculate()
     }
-    if (op == "sin" || op == "cos" || op == "tan" || op == "ln" || op == "log") {
+    if (op == "sin" || op == "cos" || op == "tan" || op == "ln" ||  op == "cosec" || op == "sec" || op == "cot" || op == "log") {
         prev_value = ""
         operator = op
         operatorToDisplay = op + "("
+        dot_exist = false
+    }
+    else if(op == "√" ){
+        prev_value = ""
+        operator = op
+        operatorToDisplay = op 
         dot_exist = false
     }
     else {

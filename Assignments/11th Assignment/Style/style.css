@@ -6,6 +6,15 @@
 
 
 main {
+    min-height: calc(100vh - (47px + 85px));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+body {
     min-height: 100vh;
     background: url(../Assets/images.jpg);
     background-repeat: no-repeat;
@@ -14,24 +23,7 @@ main {
 
 
 
-
-/* --------------- Media quereis  -------------------- */
-
-@media screen and (max-width:700px) {
-    .assignment-container {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width:400px) {
-    button.fun-btn {
-        margin: 20px 7px;
-        padding: 10px 10px;
-    }
-}
-
-
-/* --------------- Media quereis  -------------------- */
+/* --------------- SCROLL BAR  -------------------- */
 
 ::-webkit-scrollbar {
     display: none;
@@ -137,6 +129,16 @@ button.no-btn:hover {
     display: none;
 }
 
+@media screen and (max-width : 1200px) {
+    button.fun-btn {
+        width: 75px;
+    }
+
+    button.no-btn {
+        width: 62px;
+    }
+}
+
 @media screen and (max-width : 991px) {
     button.fun-btn {
         width: 62px;
@@ -169,6 +171,10 @@ button.no-btn:hover {
 }
 
 @media screen and (max-width : 450px) {
+    .calculator{
+        width: 95%;
+    }
+
     .small-screenBtns button.fun-btn {
         width: 59px;
     }

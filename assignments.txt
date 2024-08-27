@@ -1,0 +1,13 @@
+1   - assign1-219441.surge.sh
+2   - assign2-219441.surge.sh
+3   - assign3-219441.surge.sh
+4   - assign4-219441.surge.sh
+5   - assign5-219441.surge.sh
+6   - assign6-219441.surge.sh
+7   - assign7-219441.surge.sh
+8   - assign8-219441.surge.sh
+9   - assign9-219441.surge.sh
+10 - assign10-219441.surge.sh
+11 - assign11-219441.surge.sh
+12 - https://github.com/iammar99/SMIT_AI_Chatbot/tree/master/Assignments/12th%20Assignment
+13 - assign13-219441.surge.sh

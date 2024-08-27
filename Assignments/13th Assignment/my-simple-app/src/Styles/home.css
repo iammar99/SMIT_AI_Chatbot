@@ -1,0 +1,31 @@
+h1.main-heading,
+h2.main-heading {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    background: url(../Assets/heading-background.png);
+    color: transparent;
+    background-clip: text;
+    text-align: center;
+}
+
+.fields,
+.advantages {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+
+/* --------------------- Media queries --------------------- */
+
+@media screen and (max-width:551px) {
+    h1.main-heading {
+        font-size: 21px;
+    }
+}
+

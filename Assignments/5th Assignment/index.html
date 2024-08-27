@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./Assets/Favicon-logo.jpg" type="image/x-icon">
+
+    <!-- Font Awsome -->
+
+    <script src="https://kit.fontawesome.com/ad7822aef7.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <!------------------ Custom CSS ------------------>
+    <link rel="stylesheet" href="./Style/custom.css">
+
+</head>
+
+<div class="big-nav" id="big-nav">
+    <div class="bigNav-header">
+        <i class="fa-solid fa-user">
+
+        </i>
+        &nbsp;&nbsp;
+        <span>
+            Hello, <a href="login.html">Sign In</a>
+        </span>
+    </div>
+    <!--  Digital Content & Devices -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col p-0 my-2 d-flex flex-column justify-content-evenly align-items-center">
+                    <h2>
+                        Digital Content & Devices
+                    </h2>
+                    <button class="w-100 digital-content-btns">
+                        Amazon Music
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                    <button class="w-100 digital-content-btns">
+                        Kindle E-Reader & Books
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                    <button class="w-100 digital-content-btns">
+                        Amazon Appstore
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <hr class="w-100 my-0">
+        <!-- Shop by Department -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col p-0 my-2 d-flex flex-column justify-content-evenly align-items-center">
+                    <h2>
+                        Shop by Department
+                    </h2>
+                    <button class="w-100 digital-content-btns">
+                        Amazon Music
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                    <button class="w-100 digital-content-btns">
+                        Kindle E-Reader & Books
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                    <button class="w-100 digital-content-btns">
+                        Amazon Appstore
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <hr class="w-100 my-0">
+</div>
+
+<body id="body">
+    <div class="blur-body" id="blur-body">
+
+    </div>
+    <header>
+        <div class="top-nav">
+            <div class="container-fluid top-header p-0 d-flex">
+                <!-- Menu -->
+                <div class="menu">
+                    <label class="burger" for="burger" id="menu">
+                        <input type="checkbox" id="burger" onclick="handleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                </div>
+                <!-- Logo -->
+                <div class="d-flex justify-content-center align-items-center img-box">
+                    <a href="index.html">
+                        <img src="./Assets/amazon-logo.png" class="logo-img" alt="">
+                    </a>
+                </div>
+                <!-- Country -->
+                <div class="country-selection text-white">
+                    <div class="location-icon">
+                        <i class="fa-solid fa-location-dot" style="color: white;"></i>
+                    </div>
+                    <div class="location-text">
+                        <p class="m-0">
+                            Deliver to
+                        </p>
+                        <span class="country">
+                            Netherland
+                        </span>
+                    </div>
+                </div>
+                <!-- Search Bar -->
+                <div class="search-bar">
+                    <div class="input-group">
+                        <select name="country" id="">
+                            <option value="all">All</option>
+                        </select>
+                        <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                            aria-describedby="basic-addon1">
+                        <span class="input-group-text search" id="basic-addon1">
+                            <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
+                        </span>
+                    </div>
+                </div>
+                <!-- Language -->
+                <div class="language">
+                    <div class="paste-button">
+                        <a class="button" href="language.html">
+                            <img src="./Assets/us-flag.png" class="us_flag" alt="">
+                            En ▼
+                        </a>
+                        <div class="dropdown-content">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h5 class="my-0">
+                                    Choose Language
+                                </h5>
+                                <span>
+                                    <a href="language.html" class="language-link">
+                                        learn more
+                                    </a>
+                                </span>
+                            </div>
+                            <div class="languages d-flex flex-column">
+                                <div class="mb-3">
+                                    <input type="radio" name="language" id="english">
+                                    <label for="english">english</label>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="radio" name="language" id="urdu">
+                                    <label for="urdu">urdu</label>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="radio" name="language" id="spanish">
+                                    <label for="spanish">spanish</label>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="radio" name="language" id="arabic">
+                                    <label for="arabic">arabic</label>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="radio" name="language" id="portegese">
+                                    <label for="portegese">portegese</label>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mt-4 mb-3">
+                                <h5 class="my-0">
+                                    Choose Currency
+                                </h5>
+                                <span>
+                                    <a href="language.html" class="language-link">
+                                        learn more
+                                    </a>
+                                </span>
+                            </div>
+                            <div class="currency d-flex align-items-center justify-content-between">
+                                <p class="m-0">
+                                    $ - USD - US Dollar
+                                </p>
+                                <span>
+                                    <a href="language.html" class="language-link">
+                                        change
+                                    </a>
+                                </span>
+                            </div>
+                            <div>
+                                <img src="./Assets/us-flag.png" class="us_flag" alt="">
+                                You are shopping on Amazon.com
+                            </div>
+                            <a href="language.html" class="mx-auto d-block">
+                                Change country/region.
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Auth -->
+                <div class="auth">
+                    <div class="auth-button">
+                        <a class="auth" href="login.html">
+                            <span>
+                                Hello , sign in
+                            </span>
+                            Account & Lists ▼
+                        </a>
+                        <div class="auth-dropdown-content">
+                            <button class="login">
+                                Sign in
+                            </button>
+                            <div class="mx-auto my-3" style="width: fit-content;">
+                                New Customer <a href="login.html" style="font-weight: 800;font-size: 12px;">Start
+                                    here</a>
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <h2>
+                                            Your Lists
+                                        </h2>
+                                        <a href="" class="list-link">Create a List</a>
+                                        <br>
+                                        <a href="" class="list-link">Find a List or Registery</a>
+                                    </div>
+                                    <div class="col">
+                                        <h2 class="account">
+                                            Your Accounts
+                                        </h2>
+                                        <a href="" class="account-link">
+                                            Accounts
+                                        </a>
+                                        <br>
+                                        <a href="" class="account-link">
+                                            Orders
+                                        </a>
+                                        <br>
+                                        <a href="" class="account-link">
+                                            Recomendations
+                                        </a>
+                                        <br>
+                                        <a href="" class="account-link">
+                                            Browsing History
+                                        </a>
+                                        <br>
+                                        <a href="" class="account-link">
+                                            Watchlist
+                                        </a>
+                                        <br>
+                                        <a href="" class="account-link">
+                                            Video purchase & Rental
+                                        </a>
+                                        <br>
+                                        <a href="" class="account-link">
+                                            Kindle Unlimited
+                                        </a>
+                                        <br>
+                                        <a href="" class="account-link">
+                                            Content & Devices
+                                        </a>
+                                        <br>
+                                        <a href="" class="account-link">
+                                            Subscribe & Save Items
+                                        </a>
+                                        <br>
+                                        <a href="" class="account-link">
+                                            Memberships & Subscriptions
+                                        </a>
+                                        <br>
+                                        <a href="" class="account-link">
+                                            Music Library
+                                        </a>
+                                        <br>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Mobile Auth -->
+                <div class="mobile-auth">
+                    <span>
+                        Sign in
+                    </span>
+                    <i class="fa-regular fa-user" style="color: #ffffff;"></i>
+                </div>
+                <!-- Orders -->
+                <div class="order">
+                    <span>
+                        Returns
+                    </span>
+                    <br>
+                    & Orders
+                </div>
+                <!-- cart -->
+                <div class="cart">
+                    <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                    Cart
+                </div>
+            </div>
+            <!-- Mobile Search Bar -->
+            <div class="mobile-search-bar">
+                <div class="input-group">
+                    <select name="country" id="">
+                        <option value="all">All</option>
+                    </select>
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                        aria-describedby="basic-addon1">
+                    <span class="input-group-text search" id="basic-addon1">
+                        <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
+                    </span>
+                </div>
+            </div>
+            <!-- ---------------------- Mobile nav bar ---------------------- -->
+            <div class="mobile-nav" id="mobile-nav">
+                <!-- Mobile Nav upper Part -->
+                <div class="upper-part">
+                    <a href="login.html" class="mobile-auth">
+                        <span>
+                            Sign in
+                        </span>
+                        <i class="fa-regular fa-user" style="color: #ffffff;"></i>
+                    </a>
+                    <div class="mobile-nav-titles">
+                        <div class="mobile-nav-title-1">
+                            Browse
+                        </div>
+                        <div class="mobile-nav-title-2">
+                            Amazon
+                        </div>
+                    </div>
+                </div>
+                <!-- Mobile Nav Home Link -->
+                <a href="index.html" class="mobile-nav-home-link">
+                    <span>
+                        Amazon Home
+                    </span>
+                    <i class="fa-solid fa-home"></i>
+                </a>
+                <!-- Mobile Nav Trending Link -->
+                <a href="#" class="mobile-nav-trending-link">
+                    <span>
+                        Trending
+                    </span>
+                    <span style="font-weight: 400;">
+                        Movers & Shakers
+                    </span>
+                </a>
+                <!-- Mobile Nav Category Link -->
+                <div href="#" class="mobile-nav-category-link">
+                    <span class="mb-3">
+                        Top Department
+                    </span>
+                    <a class="mobile-nav-category-links">
+                        Home
+                    </a>
+                    <a class="mobile-nav-category-links">
+                        Health & HouseHold
+                    </a>
+                    <a class="mobile-nav-category-links">
+                        Books
+                    </a>
+                    <a class="mobile-nav-category-links">
+                        PC's
+                    </a>
+                    <a class="mobile-nav-category-links" id="displayMoreBtn" onclick="handleDisplayLinks()">
+                        See All <i class="fa-solid fa-angle-down"></i>
+                    </a>
+                    <div class="more-links" id="morelinks">
+                        <a href="" class="mobile-nav-category-links">Link</a>
+                        <a href="" class="mobile-nav-category-links">Link</a>
+                        <a href="" class="mobile-nav-category-links">Link</a>
+                        <a href="" class="mobile-nav-category-links">Link</a>
+                        <a href="" class="mobile-nav-category-links">Link</a>
+                        <a href="" class="mobile-nav-category-links">Link</a>
+                        <a href="" class="mobile-nav-category-links">Link</a>
+                        <a href="" class="mobile-nav-category-links">Link</a>
+                        <a href="" class="mobile-nav-category-links">Link</a>
+                        <a href="" class="mobile-nav-category-links">Link</a>
+                        <a href="" class="mobile-nav-category-links">Link</a>
+                        <a href="" class="mobile-nav-category-links">Link</a>
+                        <a href="" class="mobile-nav-category-links">Link</a>
+                        <a href="" class="mobile-nav-category-links">Link</a>
+                        <a href="" class="mobile-nav-category-links">Link</a>
+                        <a href="" class="mobile-nav-category-links">Link</a>
+                        <a href="" class="mobile-nav-category-links">Link</a>
+                        <a href="" class="mobile-nav-category-links">Link</a>
+                        <a href="" class="mobile-nav-category-links">Link</a>
+                        <a href="" class="mobile-nav-category-links">Link</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-nav">
+            <label class="big-burger" for="big-burger" id="big-menu" >
+                <input type="checkbox" id="big-burger"onclick="handleBigMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+              <a href="">Today's Deal</a>
+              <a href="">Customer Service</a>
+              <a href="">Registery</a>
+              <a href="">Gift Cards</a>
+              <a href="">Sell</a>
+        </div>
+    </header>
+    <main>
+,nm,
+    </main>
+    <footer>
+        <div class="container-fluid p-0">
+            <button class="btn border-0 w-100 rounded-0 text-white" style="background-color: #37475a;">
+                Back To Top
+            </button>
+            <!-- Upper Footer -->
+            <div class="upper-footer">
+                <div class="container-sm text-light">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-3  my-5 my-lg-0 ">
+                            <h6>Get To Know Us</h6>
+                            <a href="" class="d-block text-light">Link</a>
+                            <a href="" class="d-block text-light">Link</a>
+                            <a href="" class="d-block text-light">Link</a>
+                            <a href="" class="d-block text-light">Link</a>
+                            <a href="" class="d-block text-light">Link</a>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3  my-5 my-lg-0 ">
+                            <h6>Make Money with Us</h6>
+                            <a href="" class="d-block text-light">Link</a>
+                            <a href="" class="d-block text-light">Link</a>
+                            <a href="" class="d-block text-light">Link</a>
+                            <a href="" class="d-block text-light">Link</a>
+                            <a href="" class="d-block text-light">Link</a>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3  my-5 my-lg-0 ">
+                            <h6>Amazon Payment Products</h6>
+                            <a href="" class="d-block text-light">Link</a>
+                            <a href="" class="d-block text-light">Link</a>
+                            <a href="" class="d-block text-light">Link</a>
+                            <a href="" class="d-block text-light">Link</a>
+                            <a href="" class="d-block text-light">Link</a>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3  my-5 my-lg-0 ">
+                            <h6>Let Us Help You</h6>
+                            <a href="" class="d-block text-light">Link</a>
+                            <a href="" class="d-block text-light">Link</a>
+                            <a href="" class="d-block text-light">Link</a>
+                            <a href="" class="d-block text-light">Link</a>
+                            <a href="" class="d-block text-light">Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Middle Footer -->
+            <div class="middle-footer">
+                <div class="container text-white w-50">
+                    <div class="row">
+                        <div class="col d-none d-lg-block">
+                            <img src="Assets/amazon-logo.png" style="width: 61%;" alt="">
+                        </div>
+                        <div class="col my-3 my-lg-0">
+                            <div class="paste-button">
+                                <a class="button d-flex justify-content-between align-items-center px-2"
+                                    style="width:134px;height:40px;border: 1px solid;font-weight: 100;font-size: 12px;">
+                                    <span>
+                                        <i class="fa-solid fa-globe"></i>
+                                        &nbsp;&nbsp;&nbsp;
+                                        English
+                                    </span>
+                                    <span class="d-flex flex-column">
+                                        <i class="fa-solid fa-angle-up"></i>
+                                        <i class="fa-solid fa-angle-down"></i>
+                                    </span>
+                                </a>
+                                <div class="footer-dropdown-content">
+                                    <div class="languages d-flex flex-column">
+                                        <div class="mb-3">
+                                            <input type="radio" name="language" id="english">
+                                            <label for="english">english</label>
+                                        </div>
+                                        <div class="mb-3">
+                                            <input type="radio" name="language" id="urdu">
+                                            <label for="urdu">urdu</label>
+                                        </div>
+                                        <div class="mb-3">
+                                            <input type="radio" name="language" id="spanish">
+                                            <label for="spanish">spanish</label>
+                                        </div>
+                                        <div class="mb-3">
+                                            <input type="radio" name="language" id="arabic">
+                                            <label for="arabic">arabic</label>
+                                        </div>
+                                        <div class="mb-3">
+                                            <input type="radio" name="language" id="portegese">
+                                            <label for="portegese">portegese</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col my-3 my-lg-0">
+                            <div class="footer-currency-btn">
+                                $ USD - U.S Dollar
+                            </div>
+                        </div>
+                        <div class="col my-3 my-lg-0 ">
+                            <div class="footer-country-btn mx-md-auto">
+                                <img src="Assets/us-flag.png" alt="" style="width: 20px;">
+                                United States
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Lower footer -->
+            <div class="lower-footer">
+                <div class="parent my-5">
+                    <div>
+                        <a href="">
+                            <b class="text-light">Amazon Music</b>
+                            <div>Stream Million of Music.</div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <b class="text-light">Amazon Ads</b>
+                            <div>Reach customers
+                                wherever they
+                                spend their time</div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <b class="text-light">6pm</b>
+                            <div>Score deals
+                                on fashion brands</div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <b class="text-light"> AbeBooks</b>
+                            <div>
+                                Books, art
+                                & collectibles</div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <b class="text-light">ACX</b>
+                            <div>
+                                Audiobook Publishing
+                                Made Easy.</div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <b class="text-light">Sell on Amazon</b>
+                            <div>
+                                Start a Selling Account.</div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <b class="text-light">Amazon Business</b>
+                            <div>
+                                Everything For
+                                Your Business</div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <b class="text-light">AmazonGlobal</b>
+                            <div>
+                                Ship Orders
+                                Internationally</div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <b class="text-light">Home Services</b>
+                            <div>
+                                Experienced Pros
+                                Happiness Guarantee</div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <b class="text-light">Amazon Web Services</b>
+                            <div>Scalable Cloud
+                                Computing Services </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <b class="text-light">Audible</b>
+                            <div>Listen to Books & Original
+                                Audio Performances </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <b class="text-light">Box Office Mojo</b>
+                            <div>Find Movie
+                                Box Office Data </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <b class="text-light">Goodreads</b>
+                            <div>Book reviews
+                                & recommendations </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <b class="text-light">IMDb</b>
+                            <div>Movies, TV
+                                & Celebrities</div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <b class="text-light">MDbPro</b>
+                            <div>Get Info Entertainment
+                                Professionals Need </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <b class="text-light">Kindle Direct Publishing</b>
+                            <div>Indie Digital & Print Publishing
+                                Made Easy</div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <b class="text-light">Prime Video Direct</b>
+                            <div>Video Distribution
+                                Made Easy</div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <b class="text-light">Shopbop</b>
+                            <div>Designer
+                                Fashion Brands</div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <b class="text-light">Woot!</b>
+                            <div>Deals and
+                                Shenanigans</div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <b class="text-light">Zappos</b>
+                            <div>Shoes &
+                                Clothing </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <b class="text-light">Ring</b>
+                            <div>Smart Home
+                                Security Systems</div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <b class="text-light">eero WiFi</b>
+                            <div>Stream 4K Video
+                                in Every Room</div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <b class="text-light">Blink</b>
+                            <div>Smart Security
+                                for Every Home</div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <b class="text-light">Neighbors App</b>
+                            <div>Real-Time Crime
+                                & Safety Alerts</div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <b class="text-light">Amazon Subscription Boxes</b>
+                            <div>Top subscription boxes – right to your door</div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <b class="text-light">PillPack</b>
+                            <div>Pharmacy Simplified
+                            </div>
+                        </a>
+                    </div>
+                    <div class="div1"> </div>
+                    <div class="div2"> </div>
+                </div>
+                <div class="links mt-5 mb-3">
+                    <div>
+                        <a href="">Condition of use</a> &nbsp;&nbsp;&nbsp;
+                        <a href="">Privacy Policy</a> &nbsp;&nbsp;&nbsp;
+                        <a href="">Consumer Health Data Privacy Disclosure</a> &nbsp;&nbsp;&nbsp;
+                        <a href="">Your Ads Privacy Choices</a>
+                    </div>
+                    <div>© 1996-<span id="year"></span>, Amazon.com, Inc. or its affiliates</div>
+                </div>
+            </div>
+    </footer>
+</body>
+
+<script>
+    // -------------------- Mobile Nav -------------------------
+    function handleMenu() {
+        let classes = []
+        classes = document.getElementById("menu").classList
+        if (classes[0] === "burger" && classes[1] !== "burger-active") {
+            document.getElementById("menu").classList.add("burger-active")
+            document.getElementById("mobile-nav").style.left = "0%"
+            document.getElementById("blur-body").style.display = "block"
+                }
+        else {
+            document.getElementById("menu").classList.add("burger")
+            document.getElementById("menu").classList.remove("burger-active")
+            document.getElementById("mobile-nav").style.left = "-100%"
+            document.getElementById("blur-body").style.display = "none"
+        }
+    }
+
+    // -------------------- Mobile Nav Links Display -------------------------
+
+    function handleDisplayLinks() {
+        document.getElementById("morelinks").style.display = "flex"
+        document.getElementById("displayMoreBtn").style.display = "none"
+    }
+
+    // -------------------- Footer Date -------------------------
+    
+    let date = new Date
+    date = date.getFullYear()
+    document.getElementById("year").innerHTML = date
+
+
+    // -------------------- Big Screen Menu  -------------------------
+
+    function handleBigMenu() {
+        let classes = []
+        classes = document.getElementById("big-menu").classList
+        if (classes[0] === "big-burger" && classes[1] !== "big-burger-active") {
+            console.log("Activated")
+            document.getElementById("big-menu").classList.add("big-burger-active")
+            document.getElementById("big-menu").style.left = "43%"
+            document.getElementById("big-nav").style.left = "0%"
+            document.getElementById("blur-body").style.display = "block"
+        }
+        else {
+            console.log("Deactivated")
+            document.getElementById("big-menu").classList.add("big-burger")
+            document.getElementById("big-menu").classList.remove("big-burger-active")
+            document.getElementById("big-nav").style.left = "-100%"
+            document.getElementById("blur-body").style.display = "none"
+            document.getElementById("big-menu").style.left = "0%"
+        }
+    }
+
+</script>
+
+</html>

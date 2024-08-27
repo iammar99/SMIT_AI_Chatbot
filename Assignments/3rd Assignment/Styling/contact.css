@@ -1,0 +1,53 @@
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 75px;
+    height: 100vh;
+}
+
+.contact-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.contact-inputs button {
+    padding: 7px 40px;
+    background-color: rgb(255, 116, 66);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.contact-inputs button:hover {
+    background-color: rgb(255, 89, 29);
+}
+
+.contact input {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #333;
+    width: 650px;
+    margin-top: 20px;
+    transition: all .4s;
+}
+
+textarea {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #333;
+    width: 650px;
+    resize: none;
+    margin-top: 65px;
+    transition: all .4s;
+}
+
+.contact input, textarea:hover{
+    border-color: #000;
+}
+
+.contact button {
+    margin-top: 50px;
+}

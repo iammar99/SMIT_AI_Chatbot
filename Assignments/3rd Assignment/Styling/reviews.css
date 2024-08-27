@@ -1,0 +1,39 @@
+.reviews {
+    padding: 0 75px;
+}
+
+.reviews-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.reviews-heading {
+    margin-bottom: 0;
+}
+
+.reviews-orange-text p {
+    width: 730px;
+}
+
+.heading-p {
+    margin-top: 0;
+}
+
+.client-img {
+    justify-self: center;
+    width: 300px;
+}
+
+.client-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.client-info h1{
+    font-weight: 400;
+}

@@ -1,0 +1,14 @@
+footer {
+    background: rgb(0, 111, 181);
+    background: linear-gradient(140deg, rgba(0, 111, 181, 1) 0%, rgba(6, 56, 113, 1) 83%, rgba(0, 20, 42, 1) 100%);
+    display: flex;
+    justify-content: center;
+    padding: 15px 0px;
+    align-items: center;
+}
+
+p.footer-para {
+    margin: auto;
+    color: white;
+    font-family: cursive;
+}

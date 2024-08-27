@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./Assets/Favicon-logo.jpg" type="image/x-icon">
+
+    <!-- Font Awsome -->
+
+    <script src="https://kit.fontawesome.com/ad7822aef7.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <!------------------ Custom CSS ------------------>
+    <link rel="stylesheet" href="./Style/custom.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid top-header p-0 d-flex">
+            <!-- Logo -->
+            <div class="d-flex justify-content-center align-items-center" style="width: 10%;height: 100px;">
+                <a href="index.html">
+                    <img src="./Assets/amazon-logo.png" class="logo-img" alt="">
+                </a>
+            </div>
+            <!-- Country -->
+            <div class="country-selection text-white">
+                <div class="location-icon">
+                    <i class="fa-solid fa-location-dot" style="color: white;"></i>
+                </div>
+                <div class="location-text">
+                    <p class="m-0">
+                        Deliver to
+                    </p>
+                    <span class="country">
+                        Netherland
+                    </span>
+                </div>
+            </div>
+            <!-- Search Bar -->
+            <div class="search-bar">
+                <div class="input-group">
+                    <select name="country" id="">
+                        <option value="all">All</option>
+                    </select>
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                        aria-describedby="basic-addon1">
+                    <span class="input-group-text search" id="basic-addon1">
+                        <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
+                    </span>
+                </div>
+            </div>
+            <!-- Language -->
+            <div class="language">
+                <div class="paste-button">
+                    <a class="button" href="language.html">
+                        <img src="./Assets/us-flag.png" class="us_flag" alt="">
+                        En ▼
+                    </a>
+                    <div class="dropdown-content">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h5 class="my-0">
+                                Choose Language
+                            </h5>
+                            <span>
+                                <a href="language.html" class="language-link">
+                                    learn more
+                                </a>
+                            </span>
+                        </div>
+                        <div class="languages d-flex flex-column">
+                            <div class="mb-3">
+                                <input type="radio" name="language" id="english">
+                                <label for="english">english</label>
+                            </div>
+                            <div class="mb-3">
+                                <input type="radio" name="language" id="urdu">
+                                <label for="urdu">urdu</label>
+                            </div>
+                            <div class="mb-3">
+                                <input type="radio" name="language" id="spanish">
+                                <label for="spanish">spanish</label>
+                            </div>
+                            <div class="mb-3">
+                                <input type="radio" name="language" id="arabic">
+                                <label for="arabic">arabic</label>
+                            </div>
+                            <div class="mb-3">
+                                <input type="radio" name="language" id="portegese">
+                                <label for="portegese">portegese</label>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mt-4 mb-3">
+                            <h5 class="my-0">
+                                Choose Currency
+                            </h5>
+                            <span>
+                                <a href="language.html" class="language-link">
+                                    learn more
+                                </a>
+                            </span>
+                        </div>
+                        <div class="currency d-flex align-items-center justify-content-between">
+                            <p class="m-0">
+                                $ - USD - US Dollar
+                            </p>
+                            <span>
+                                <a href="language.html" class="language-link">
+                                    change
+                                </a>
+                            </span>
+                        </div>
+                        <div>
+                            <img src="./Assets/us-flag.png" class="us_flag" alt="">
+                            You are shopping on Amazon.com
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1 class="text-start my-5 ms-3">
+            Language Setting
+        </h1>
+    </main>
+    <footer></footer>
+</body>
+
+</html>

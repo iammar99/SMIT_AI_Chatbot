@@ -1,0 +1,224 @@
+.upper-footer {
+    min-height: 250px;
+    background-color: #232f3e;
+    padding: 60px 0px;
+}
+
+/* ---------------- Middle footer --------------------- */
+
+.middle-footer {
+    background: #232f3e;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+}
+
+
+/* ---------------- DropDown --------------------- */
+
+
+.paste-button {
+    position: relative;
+    display: block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: fit-content;
+}
+
+.button {
+    background-color: transparent;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 900;
+    border: 2px solid transparent;
+    border-radius: 1px;
+    cursor: pointer;
+}
+
+.button:hover {
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-dropdown-content {
+    display: none;
+    color: black;
+    font-size: 13px;
+    position: absolute;
+    z-index: 1;
+    min-width: 250px;
+    background-color: white;
+    border: 0px;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    min-height: 361px;
+    padding: 15px 26px;
+}
+
+.footer-dropdown-content h5 {
+    font-size: 14px;
+}
+
+.footer-dropdown-content span {
+    color: #4473f9;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.footer-dropdown-content label {
+    text-transform: capitalize;
+    display: inline-block;
+    width: fit-content;
+    margin-left: 10px;
+}
+
+img.us_flag {
+    width: 20px;
+    height: 15px;
+}
+
+
+.footer-dropdown-content input {
+    display: inline-block;
+    width: fit-content;
+}
+
+a.language-link {
+    text-decoration: none;
+    color: #007185;
+    font-weight: 300;
+}
+
+a.language-link:hover {
+    text-decoration: underline;
+    color: orange;
+}
+
+.footer-dropdown-content:before {
+    content: "";
+    z-index: -1;
+    background: white;
+    width: 20px;
+    height: 20px;
+    top: -9px;
+    position: absolute;
+    left: 42px;
+    transform: rotate(45deg);
+}
+
+
+.footer-dropdown-content #top:hover {
+    border-radius: 0px 13px 0px 0px;
+}
+
+.footer-dropdown-content #bottom:hover {
+    border-radius: 0px 0px 13px 13px;
+}
+
+.paste-button:hover button {
+    border-radius: 15px 15px 0px 0px;
+}
+
+.paste-button:hover .footer-dropdown-content {
+    display: block;
+}
+
+
+
+.footer-country-btn {
+    border: 1px solid;
+    padding: 5px 4px;
+    width: 156px;
+    text-align: center;
+    height: 40px;
+}
+
+
+.footer-currency-btn {
+    width: max-content;
+    height: 40px;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    padding: 0px 13px;
+}
+
+/* ---------------- Lower footer --------------------- */
+
+.lower-footer {
+    background: #0D141E;
+    min-height: fit-content;
+    color: white;
+    padding-top: 63px;
+    padding-bottom: 23px;
+}
+
+a.lower-footer-links:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 18px;
+    grid-row-gap: 18px;
+    width: 85%;
+    height: 269px;
+    font-size: 11px;
+    margin: auto;
+}
+
+.parent a:hover {
+    text-decoration: none;
+}
+
+
+.parent b:hover {
+    text-decoration: underline white;
+}
+
+
+.parent a div {
+    color: #918f95;
+}
+
+
+.parent a div:hover {
+    text-decoration: underline #918f95;
+}
+
+.div1 {
+    grid-area: 4 / 1 / 5 / 2;
+}
+
+.div2 {
+    grid-area: 4 / 7 / 5 / 8;
+}
+
+.links {
+    color: white;
+    margin: auto;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.links a{
+    color: white;
+}
+
+.links .container .row a:hover{
+    text-decoration: underline white;
+}
+
+/* --------------------------- Media Queries --------------------------- */
+
+@media screen and (max-width:991px) {
+    .parent {
+        display: none;
+    }
+}

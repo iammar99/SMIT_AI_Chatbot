@@ -75,8 +75,8 @@ A special thanks to SMIT for providing this educational experience and to Sir Ah
 ### REACT js Assignments
 
 1. [REACT js -> Assignment 13](https://assign13-219441.surge.sh/)
-1. [REACT js -> Assignment 14](https://assign14-219441.surge.sh/)
-   
+2. [REACT js -> Assignment 14](https://assign14-219441.surge.sh/)
+3. [REACT js -> Assignment 15](https://assign15-219441.surge.sh/)   
 
 ## Getting Started
 

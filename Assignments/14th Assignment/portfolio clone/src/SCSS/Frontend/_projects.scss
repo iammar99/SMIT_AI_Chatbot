@@ -1,0 +1,18 @@
+section#projects {
+    font-family: monospace;
+    min-height: 100vh;
+    margin: 10px auto;
+    padding: 0px 80px;
+    overflow: hidden;
+}
+
+
+
+// ------------------- Media query -------------------
+
+
+@media screen and (max-width:646px) {
+    section#projects {
+        padding: 0px 10px;
+    }
+}

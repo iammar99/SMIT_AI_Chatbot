@@ -1,0 +1,16 @@
+button {
+    background: transparent;
+    border: 1px solid $themeColor;
+    color: $themeColor;
+    padding: 6px 21px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    a{
+        color: $themeColor;
+    }
+}
+
+
+button:hover {
+    background-color:rgba($color:  $themeColor, $alpha: 0.3)
+}

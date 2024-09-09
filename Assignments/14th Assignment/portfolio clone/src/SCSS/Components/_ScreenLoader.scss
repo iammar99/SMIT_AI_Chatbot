@@ -1,0 +1,57 @@
+/* src/Components/ScreenLoader/ScreenLoader.scss */
+
+.screen-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0a192f; // Loader screen background color
+  z-index: 9999;
+}
+
+.hexagon {
+  width: 100px;
+  height: 92px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  animation: buildHexagon 1s forwards;
+  transform: rotate(90deg);
+  border: 2px solid #64ffda;
+  background: #64ffda;
+}
+
+.letter {
+  font-size: 2.5rem;
+  color: $backgroundColor;
+  font-weight: bold;
+  opacity: 0;
+  animation: fadeInLetter 1.5s forwards 0.5s;
+  transform: rotate(270deg);
+}
+
+@keyframes buildHexagon {
+  0% {
+    clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%);
+    // Starts with a dot
+  }
+  100% {
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    // Ends with a full hexagon
+  }
+}
+
+@keyframes fadeInLetter {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

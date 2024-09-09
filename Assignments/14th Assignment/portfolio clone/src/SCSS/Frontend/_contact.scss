@@ -1,0 +1,31 @@
+section#contact {
+    font-family: monospace;
+    min-height: 100vh;
+    margin: 10px auto;
+    padding: 0px 80px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    div.contact_para {
+        color: $font2Color;
+        text-align: center;
+        width: 60%;
+        margin: 10px auto;
+    }
+}
+
+
+
+
+
+// ------------------- Media query -------------------
+
+
+@media screen and (max-width:646px) {
+    section#contact {
+        padding: 0px 10px;
+    }
+}

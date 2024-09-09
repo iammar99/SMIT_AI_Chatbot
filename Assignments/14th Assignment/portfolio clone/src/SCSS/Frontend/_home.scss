@@ -1,0 +1,181 @@
+section#home {
+    font-family: monospace;
+    min-height: 100vh;
+    margin: 10px auto;
+    width: fit-content;
+    padding: 0px 80px;
+}
+
+#home_intro {
+    color: $themeColor;
+    font-weight: 500;
+    font-size: 26px;
+}
+
+h1.home_intro_name {
+    color: $fontColor;
+    font-size: 80px;
+    font-weight: 900;
+    font-family: Calibri;
+}
+
+h1.home_intro_job {
+    color: $font2Color;
+    font-family: Calibri;
+    font-size: 80px;
+    font-weight: 900;
+}
+
+
+.description {
+    color: $font2Color;
+    font-family: Calibri;
+    font-size: 18px;
+    width: 65%;
+
+    a {
+        color: $themeColor;
+        position: relative;
+    }
+
+    a::before {
+        content: "";
+        height: 1.1px;
+        width: 0%;
+        background-color: #64ffda;
+        position: absolute;
+        bottom: 0px;
+        transition: all 0.5s ease;
+    }
+
+    a:hover:before {
+        width: 100%;
+    }
+}
+
+// ---------- Side Links ----------------
+
+// --------------- Right Link --------------------------
+
+
+.email {
+    display: flex;
+    align-items: center;
+    width: -moz-fit-content;
+    width: fit-content;
+    transform: rotate(90deg);
+    position: fixed;
+    right: -13%;
+    bottom: 27%;
+
+    a {
+        color: $fontColor;
+        transition: all 0.2s ease;
+    }
+
+    a:hover {
+        color: $themeColor;
+        transform: translateX(-10px);
+    }
+
+    .email_line {
+        width: 197px;
+        height: 1px;
+        background-color: $fontColor;
+        margin-left: 10px;
+    }
+}
+
+
+// --------------- Left Links --------------------------
+
+
+
+.fixed_links {
+    display: flex;
+    align-items: center;
+    width: -moz-fit-content;
+    width: fit-content;
+    transform: rotate(90deg);
+    position: fixed;
+    bottom: 26%;
+    left: -13%;
+
+    svg {
+        margin: 0px 9px;
+        transform: rotate(268deg);
+        color: $fontColor;
+        transition: all 0.2s ease;
+    }
+
+    svg:hover {
+        color: $themeColor;
+    }
+
+    a {
+        color: $fontColor;
+    }
+
+    a:hover {
+        color: $themeColor;
+    }
+
+    .links_line {
+        width: 197px;
+        height: 1px;
+        background-color: $fontColor;
+        margin-left: 10px;
+    }
+}
+
+// ---------- media queries ----------------
+
+@media screen and (max-width:665px) {
+    h1.home_intro_job {
+        font-size: 55px;
+    }
+    section#home {
+        padding: 0px 10px;
+    }
+}
+
+@media screen and (max-width:464px) {
+    h1.home_intro_name {
+        font-size: 50px;
+    }
+    
+    .description {
+        width: 100%;
+    }
+}
+// ---------- Side Links ----------------
+
+@media screen and (max-width:771px) {
+    .email {
+        display: none;
+    }
+
+    .fixed_links {
+        display: none;
+    }
+}
+
+@media screen and (max-width:934px) {
+    .email {
+        right: -25%;
+    }
+
+    .fixed_links {
+        left: -25%;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .email {
+        right: -22%;
+    }
+
+    .fixed_links {
+        left: -22%;
+    }
+}

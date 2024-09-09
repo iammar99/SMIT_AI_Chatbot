@@ -1,0 +1,170 @@
+section#experience {
+    font-family: monospace;
+    min-height: 100vh;
+    margin: 10px auto;
+    padding: 0px 80px;
+    overflow: hidden;
+}
+
+// ------------------------------ Navbar ------------------------------
+
+.experience_navbar {
+    ul {
+        list-style: none;
+        border-left: 1px solid #8892b0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 350px;
+        padding: 0px;
+    }
+
+    li {
+        color: $font2Color;
+        height: -webkit-fill-available;
+        display: flex;
+        align-items: center;
+        transition: all 0.3s ease;
+        padding-left: 20px;
+        font-size: 13px;
+        cursor: pointer;
+    }
+
+
+    li:hover {
+        color: $themeColor;
+        background-color: rgb($color: $themeColor , $alpha: 0.3);
+    }
+
+    li.active {
+        color: $themeColor;
+        background-color: rgb($color: $themeColor , $alpha: 0.3);
+    }
+}
+
+
+
+// ------------------------------ Description ------------------------------
+
+.pt {
+    color: $font2Color;
+    margin: 24px 0px;
+    display: flex;
+    align-items: baseline;
+
+    .experience_arrow {
+        width: 32px;
+    }
+
+    div {
+        font-size: 18px;
+        font-family: calibri;
+        line-height: 20px;
+    }
+}
+
+
+.expereince_description {
+
+    .ecofactor_desc,
+    .lablab_desc,
+    .icodeguru_desc,
+    .smit_desc,
+    .stanford_desc,
+    .zxtech_desc,
+    .seeraht_desc,
+    .freelancing_desc {
+        display: none;
+    }
+
+    div.active {
+        display: block;
+    }
+
+    a {
+        color: $themeColor;
+        position: relative;
+    }
+
+    a::before {
+        content: "";
+        height: 1.1px;
+        width: 0%;
+        background-color: $themeColor;
+        position: absolute;
+        bottom: 0px;
+        transition: all 0.5s ease;
+    }
+
+    a:hover:before {
+        width: 100%;
+    }
+    b{
+        font-size: 19px;
+    }
+
+    .course_heading{
+        color: $font2Color;
+    }
+    
+    .link_text{
+        color: $font2Color;
+    }
+}
+
+
+
+
+
+
+
+
+// ------------- Media query -------------------
+
+@media screen and (max-width:771px) {
+    ul {
+        flex-direction: row !important;
+        height: fit-content !important;
+        border-bottom: 1px solid $font2Color;
+        width: -moz-fit-content;
+        width: fit-content;
+    }
+
+    .experience_navbar {
+        overflow-x: auto !important;
+    }
+
+    li {
+        height: 45px !important;
+        width: max-content;
+        padding-right: 10px;
+    }
+
+    section#experience {
+        padding: 0px 10px;
+    }
+}
+
+
+// ------------- SCroll bar -------------------
+
+
+.experience_navbar::-webkit-scrollbar {
+    width: 1px;
+}
+
+.experience_navbar::-webkit-scrollbar-thumb {
+    background-color: $fontColor;
+    display: none;
+    border-radius: 10px;
+}
+
+.experience_navbar::-webkit-scrollbar-thumb:hover {
+    display: block;
+    background-color: $themeColor;
+}
+
+
+.experience_navbar::-webkit-scrollbar-track {
+    background-color: $backgroundColor;
+}

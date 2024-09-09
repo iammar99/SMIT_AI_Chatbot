@@ -1,0 +1,27 @@
+// -------------- variables --------------
+$backgroundColor : #0a192f;
+$fontColor : #ccd6f6;
+$font2Color : #8892b0;
+$themeColor : #64ffda;
+// -------------- Components --------------
+@import './SCSS/Components/bootstrap';
+@import './SCSS/Components/ScreenLoader';
+@import './SCSS/Components/header';
+@import './SCSS/Components/button';
+@import './SCSS/Components/arrow';
+@import './SCSS/Components/heading';
+@import './SCSS/Components/skills';
+@import './SCSS/Components/experience_heading';
+@import './SCSS/Components/otherProjectCard';
+@import './SCSS/Components/projectCard';
+// -------------- Frontend --------------
+@import './SCSS/Frontend/home';
+@import './SCSS/Frontend/about';
+@import './SCSS/Frontend/experience';
+@import './SCSS/Frontend/contact';
+@import './SCSS/Frontend/projects';
+@import './SCSS/Frontend/otherProjects';
+// -------------- Global --------------
+@import './SCSS/global';
+
+

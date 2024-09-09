@@ -1,0 +1,66 @@
+section#about {
+    font-family: monospace;
+    min-height: 100vh;
+    margin: 10px auto;
+    padding: 0px 80px;
+    overflow: hidden;
+}
+
+
+// ------------------- Image -------------------
+
+.image_card {
+    border: 1px solid #64ffda;
+    width: 75%;
+    height: 346px;
+    margin: auto;
+    transition: all 0.3s ease;
+    padding: 25px 21px;
+}
+
+.image_card:hover {
+
+    transform: scale(0.91);
+}
+
+// ------------------- DEscription -------------------
+
+.about_description {
+    color: $font2Color;
+    font-size: 20px;
+    font-family: calibri;
+    
+    div {
+        margin: 20px 0px;
+    }
+
+    a {
+        color: $themeColor;
+        position: relative;
+    }
+
+    a::before {
+        content: "";
+        height: 1.1px;
+        width: 0%;
+        background-color: #64ffda;
+        position: absolute;
+        bottom: 0px;
+        transition: all 0.5s ease;
+    }
+
+    a:hover:before {
+        width: 100%;
+    }
+}
+
+
+
+// ------------------- Media query -------------------
+
+
+@media screen and (max-width:646px) {
+    section#about {
+        padding: 0px 10px;
+    }
+}

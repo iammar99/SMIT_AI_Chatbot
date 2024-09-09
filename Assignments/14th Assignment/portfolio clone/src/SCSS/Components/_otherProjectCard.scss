@@ -1,0 +1,50 @@
+.other_project_card {
+    background-color: #172a45;
+    width: 100%;
+    min-height: 340px;
+    border-radius: 10px;
+    margin: 15px 0px;
+    padding: 27px;
+    font-family: calibri;
+    transition: all 0.3s ease;
+
+    svg.folder {
+        color: $themeColor;
+    }
+
+    svg.github {
+        color: $font2Color;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+
+    svg.github:hover {
+        color: $themeColor;
+    }
+
+    .other_project_heading {
+        font-size: 22px;
+        margin: 17px;
+        font-weight: 600;
+        color: $fontColor;
+    }
+
+    .other_project_description {
+        font-size: 17px;
+        margin: 17px;
+        color: rgba($color: $font2Color, $alpha: 0.8);
+    }
+
+    .other_project_techs {
+        font-size: 12px;
+        margin: 17px;
+        color: $font2Color;
+        margin-bottom : 0px;
+    }
+}
+
+.other_project_card:hover{
+    cursor: pointer;
+    margin-bottom: 8px;
+    transform: translateY(-10px);
+}

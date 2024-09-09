@@ -1,0 +1,53 @@
+
+// ------------------- HEADING ------------------- 
+
+
+.component-heading {
+    display: flex;
+    align-items: baseline;
+}
+
+
+.component_heading_number {
+    color: $themeColor;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+
+h1.component_heading {
+    color: $fontColor;
+    font-family: calibri;
+    font-weight: 700;
+    font-size: 32px;
+    margin: 0 15px;
+}
+
+.component_heading_line {
+    width: 25%;
+    height: 1px;
+    background-color: $font2Color;
+    margin: 0 105px 0 auto;
+}
+
+
+// ---------------------- Media query ---------------------
+
+
+// ------------------- HEADING ------------------- 
+
+@media screen and (max-width:551px) {
+    h1.component_heading {
+        font-size: 25px;
+    }
+
+    .component_heading_number {
+        font-size: 10px;
+    }
+
+    .component_heading_line {
+        width: 33%;
+        margin: 0px -15px 0 auto;
+    }
+}

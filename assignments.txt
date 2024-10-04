@@ -11,3 +11,6 @@
 11 - assign11-219441.surge.sh
 12 - https://github.com/iammar99/SMIT_AI_Chatbot/tree/master/Assignments/12th%20Assignment
 13 - assign13-219441.surge.sh
+14 - assign14-219441.surge.sh
+15 - assign15-219441.surge.sh
+16 - assign16-219441.surge.sh

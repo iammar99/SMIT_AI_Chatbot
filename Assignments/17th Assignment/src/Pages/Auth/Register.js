@@ -37,6 +37,7 @@ export default function Register() {
         //     ...user,
         //     userId : Math.floor(100000 + Math.random() * 900000).toString()
         // })
+        message.success("Registered")
         setUsers([...users ,user])
         setIsAuth(true)
         navigate("/")

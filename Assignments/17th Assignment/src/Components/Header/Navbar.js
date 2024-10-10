@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import logo from "../../Assets/logo.png"
 import { useCartContext } from '../../Context/CartContext'
 import { useAuthContext } from '../../Context/AuthContext'
+import { message } from 'antd'
 
 export default function Navbar() {
 
@@ -17,7 +18,7 @@ export default function Navbar() {
   }
 
   const handleLogout = () => {
-    
+    message.warning("Logout")
     setIsAuth(false)
   }
 
